@@ -1,0 +1,118 @@
+{
+  "schedules": [{
+    "date": "2018-07-18",
+    "matches": [
+      ["GEN", "KZ"],
+      ["Jin Air", "bbq"]
+    ]
+  }, {
+    "date": "2018-07-19",
+    "matches": [
+      ["HLE", "GRF"],
+      ["KT", "SKT"]
+    ]
+  }, {
+    "date": "2018-07-20",
+    "matches": [
+      ["Jin Air", "MVP"],
+      ["bbq", "AFs"]
+    ]
+  }, {
+    "date": "2018-07-21",
+    "matches": [
+      ["GRF", "KT"],
+      ["SKT", "HLE"]
+    ]
+  }, {
+    "date": "2018-07-22",
+    "matches": [
+      ["KZ", "MVP"],
+      ["AFs", "GEN"]
+    ]
+  }, {
+    "date": "2018-07-24",
+    "matches": [
+      ["GRF", "KZ"],
+      ["GEN", "KT"]
+    ]
+  }, {
+    "date": "2018-07-25",
+    "matches": [
+      ["SKT", "bbq"],
+      ["HLE", "Jin Air"],
+      ["MVP", "AFs"]
+    ]
+  }, {
+    "date": "2018-07-26",
+    "matches": [
+      ["KZ", "KT"],
+      ["GEN", "GRF"]
+    ]
+  }, {
+    "date": "2018-07-27",
+    "matches": [
+      ["bbq", "HLE"],
+      ["Jin Air", "SKT"]
+    ]
+  }, {
+    "date": "2018-07-28",
+    "matches": [
+      ["AFs", "KZ"],
+      ["GRF", "MVP"]
+    ]
+  }, {
+    "date": "2018-07-29",
+    "matches": [
+      ["SKT", "GEN"],
+      ["KT", "bbq"]
+    ]
+  }, {
+    "date": "2018-07-31",
+    "matches": [
+      ["Jin Air", "GRF"],
+      ["KZ", "HLE"]
+    ]
+  }, {
+    "date": "2018-08-01",
+    "matches": [
+      ["bbq", "GEN"],
+      ["SKT", "AFs"]
+    ]
+  }, {
+    "date": "2018-08-02",
+    "matches": [
+      ["HLE", "MVP"],
+      ["Jin Air", "KT"]
+    ]
+  }, {
+    "date": "2018-08-04",
+    "matches": [
+      ["SKT", "GRF"],
+      ["GEN", "Jin Air"]
+    ]
+  }, {
+    "date": "2018-08-05",
+    "matches": [
+      ["AFs", "HLE"],
+      ["KZ", "bbq"]
+    ]
+  }, {
+    "date": "2018-08-07",
+    "matches": [
+      ["GEN", "MVP"],
+      ["HLE", "KT"]
+    ]
+  }, {
+    "date": "2018-08-08",
+    "matches": [
+      ["AFs", "Jin Air"],
+      ["GRF", "bbq"]
+    ]
+  }, {
+    "date": "2018-08-09",
+    "matches": [
+      ["SKT", "KZ"],
+      ["MVP", "KT"]
+    ]
+  }]
+}
