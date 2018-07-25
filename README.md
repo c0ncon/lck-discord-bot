@@ -1,10 +1,8 @@
-# HOWTO
+# lck-discord-bot
 
-1. `$ go get github.com/bwmarrin/discordgo`
-2. Insert token [HERE](https://github.com/c0ncon/lck-discord-bot/blob/master/src/lck-bot/lck-bot.go#L42)
-3. `$ go build lck-bot`
+Insert token [HERE](https://github.com/c0ncon/lck-discord-bot/blob/master/src/lck-bot/lck-bot.go#L37)
 
-## schedules.json schema
+## schedules.json
 
 ```json
 {
