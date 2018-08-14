@@ -14,8 +14,9 @@ import (
 )
 
 var (
-	Token     string
-	schedules Schedules
+	Token      string
+	schedules  Schedules
+	WeekdayKor = [...]string{"일", "월", "화", "수", "목", "금", "토"}
 )
 
 type Schedules struct {
@@ -67,7 +68,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		t = t.Add(9 * time.Hour)
 		c, _ := s.State.Channel(m.ChannelID)
 		g, _ := s.State.Guild(c.GuildID)
-		fmt.Printf("%s %s@%s#%s\n", t.Format("2006-01-02 15:04:06"), m.Author.Username, g.Name, c.Name)
+		fmt.Printf("%s %s@%s#%s\n", t.Format("2006-01-02 15:04"), m.Author.Username, g.Name, c.Name)
 		s.ChannelMessageSend(m.ChannelID, getNextMatch())
 	}
 }
@@ -98,7 +99,7 @@ func getNextMatch() string {
 				matches[i] = strings.Join(m, " vs ")
 			}
 
-			nextMatch = sc.Date + ": " + strings.Join(matches, " / ")
+			nextMatch = sc.Date + "(" + WeekdayKor[t.Weekday()] + "): " + strings.Join(matches, " / ")
 			break
 		}
 	}
