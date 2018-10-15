@@ -1,138 +1,84 @@
 {
   "schedules": [{
-    "date": "2018-07-18",
+    "date": "2018-10-10",
     "matches": [
-      ["GEN", "KZ"],
-      ["Jin Air", "bbq"]
+      ["KT", "TL"],
+      ["EDG", "MAD"],
+      ["PVB", "FW"],
+      ["AFs", "G2"],
+      ["RNG", "C9"],
+      ["GEN", "VIT"]
     ]
   }, {
-    "date": "2018-07-19",
+    "date": "2018-10-11",
     "matches": [
-      ["HLE", "GRF"],
-      ["KT", "SKT"]
+      ["FW", "AFs"],
+      ["PVB", "G2"],
+      ["100", "FNC"],
+      ["iG", "GRX"],
+      ["VIT", "C9"],
+      ["GEN", "RNG"]
     ]
   }, {
-    "date": "2018-07-20",
+    "date": "2018-10-12",
     "matches": [
-      ["Jin Air", "MVP"],
-      ["bbq", "AFs"]
+      ["MAD", "KT"],
+      ["TL", "EDG"],
+      ["FNC", "iG"],
+      ["100", "GRX"],
+      ["RNG", "VIT"],
+      ["C9", "GEN"]
     ]
   }, {
-    "date": "2018-07-21",
+    "date": "2018-10-13",
     "matches": [
-      ["GRF", "KT"],
-      ["SKT", "HLE"]
+      ["AFs", "PVB"],
+      ["G2", "FW"],
+      ["iG", "100"],
+      ["GRX", "FNC"],
+      ["TL", "MAD"],
+      ["KT", "EDG"]
     ]
   }, {
-    "date": "2018-07-22",
+    "date": "2018-10-14",
     "matches": [
-      ["KZ", "MVP"],
-      ["AFs", "GEN"]
+      ["VIT", "RNG"],
+      ["GEN", "C9"],
+      ["VIT", "GEN"],
+      ["C9", "RNG"],
+      ["C9", "VIT"],
+      ["RNG", "GEN"],
+      ["RNG", "C9"]
     ]
   }, {
-    "date": "2018-07-24",
+    "date": "2018-10-15",
     "matches": [
-      ["GRF", "KZ"],
-      ["GEN", "KT"]
+      ["AFs", "FW"],
+      ["G2", "PVB"],
+      ["FW", "G2"],
+      ["PVB", "AFs"],
+      ["FW", "PVB"],
+      ["G2", "AFs"]
     ]
   }, {
-    "date": "2018-07-25",
+    "date": "2018-10-16",
     "matches": [
-      ["SKT", "bbq"],
-      ["HLE", "Jin Air"],
-      ["MVP", "AFs"]
+      ["TL", "KT"],
+      ["MAD", "EDG"],
+      ["MAD", "TL"],
+      ["EDG", "KT"],
+      ["EDG", "TL"],
+      ["KT", "MAD"]
     ]
   }, {
-    "date": "2018-07-26",
+    "date": "2018-10-17",
     "matches": [
-      ["KZ", "KT"],
-      ["GEN", "GRF"]
-    ]
-  }, {
-    "date": "2018-07-27",
-    "matches": [
-      ["bbq", "HLE"],
-      ["Jin Air", "SKT"]
-    ]
-  }, {
-    "date": "2018-07-28",
-    "matches": [
-      ["AFs", "KZ"],
-      ["GRF", "MVP"]
-    ]
-  }, {
-    "date": "2018-07-29",
-    "matches": [
-      ["SKT", "GEN"],
-      ["KT", "bbq"]
-    ]
-  }, {
-    "date": "2018-07-31",
-    "matches": [
-      ["Jin Air", "GRF"],
-      ["KZ", "HLE"]
-    ]
-  }, {
-    "date": "2018-08-01",
-    "matches": [
-      ["bbq", "GEN"],
-      ["SKT", "AFs"]
-    ]
-  }, {
-    "date": "2018-08-02",
-    "matches": [
-      ["HLE", "MVP"],
-      ["Jin Air", "KT"]
-    ]
-  }, {
-    "date": "2018-08-04",
-    "matches": [
-      ["SKT", "GRF"],
-      ["GEN", "Jin Air"]
-    ]
-  }, {
-    "date": "2018-08-05",
-    "matches": [
-      ["AFs", "HLE"],
-      ["KZ", "bbq"]
-    ]
-  }, {
-    "date": "2018-08-07",
-    "matches": [
-      ["GEN", "MVP"],
-      ["HLE", "KT"]
-    ]
-  }, {
-    "date": "2018-08-08",
-    "matches": [
-      ["AFs", "Jin Air"],
-      ["GRF", "bbq"]
-    ]
-  }, {
-    "date": "2018-08-09",
-    "matches": [
-      ["SKT", "KZ"],
-      ["MVP", "KT"]
-    ]
-  }, {
-    "date": "2018-08-12",
-    "matches": [
-      ["GEN", "AFs"]
-    ]
-  }, {
-    "date": "2018-08-15",
-    "matches": [
-      ["KZ", "AFs"]
-    ]
-  }, {
-    "date": "2018-08-18",
-    "matches": [
-      ["GRF", "TBD"]
-    ]
-  }, {
-    "date": "2018-09-08",
-    "matches": [
-      ["KT", "TBD"]
+      ["FNC", "100"],
+      ["GRX", "iG"],
+      ["FNC", "GRX"],
+      ["100", "iG"],
+      ["GRX", "100"],
+      ["iG", "FNC"]
     ]
   }]
 }
