@@ -1,96 +1,273 @@
 {
   "schedules": [{
-    "date": "2018-10-10",
+    "date": "2019-01-16",
     "matches": [
-      ["KT", "TL"],
-      ["EDG", "MAD"],
-      ["PVB", "FW"],
-      ["AFs", "G2"],
-      ["RNG", "C9"],
-      ["GEN", "VIT"]
+      ["SKT", "JAG"],
+      ["DWG", "GEN"]
     ]
   }, {
-    "date": "2018-10-11",
+    "date": "2019-01-17",
     "matches": [
-      ["FW", "AFs"],
-      ["PVB", "G2"],
-      ["100", "FNC"],
-      ["iG", "GRX"],
-      ["VIT", "C9"],
-      ["GEN", "RNG"]
+      ["KT", "HLE"],
+      ["KZ", "GRF"]
     ]
   }, {
-    "date": "2018-10-12",
+    "date": "2019-01-18",
     "matches": [
-      ["MAD", "KT"],
-      ["TL", "EDG"],
-      ["FNC", "iG"],
-      ["100", "GRX"],
-      ["RNG", "VIT"],
-      ["C9", "GEN"]
+      ["GEN", "SBG"],
+      ["AFs", "SKT"]
     ]
   }, {
-    "date": "2018-10-13",
+    "date": "2019-01-19",
     "matches": [
-      ["AFs", "PVB"],
-      ["G2", "FW"],
-      ["iG", "100"],
-      ["GRX", "FNC"],
-      ["TL", "MAD"],
-      ["KT", "EDG"]
+      ["DWG", "KT"],
+      ["GRF", "JAG"]
     ]
   }, {
-    "date": "2018-10-14",
+    "date": "2019-01-20",
     "matches": [
-      ["VIT", "RNG"],
-      ["GEN", "C9"],
-      ["VIT", "GEN"],
-      ["C9", "RNG"],
-      ["C9", "VIT"],
-      ["RNG", "GEN"],
-      ["RNG", "C9"]
+      ["KZ", "SBG"],
+      ["AFs", "HLE"]
     ]
   }, {
-    "date": "2018-10-15",
+    "date": "2019-01-23",
     "matches": [
-      ["AFs", "FW"],
-      ["G2", "PVB"],
-      ["FW", "G2"],
-      ["PVB", "AFs"],
-      ["FW", "PVB"],
-      ["G2", "AFs"]
+      ["KT", "KZ"],
+      ["HLE", "GRF"]
     ]
   }, {
-    "date": "2018-10-16",
+    "date": "2019-01-24",
     "matches": [
-      ["TL", "KT"],
-      ["MAD", "EDG"],
-      ["MAD", "TL"],
-      ["EDG", "KT"],
-      ["EDG", "TL"],
-      ["KT", "MAD"]
+      ["SBG", "SKT"],
+      ["GEN", "AFs"]
     ]
   }, {
-    "date": "2018-10-17",
+    "date": "2019-01-25",
     "matches": [
-      ["FNC", "100"],
-      ["GRX", "iG"],
-      ["FNC", "GRX"],
-      ["100", "iG"],
-      ["GRX", "100"],
-      ["iG", "FNC"]
+      ["KT", "JAG"],
+      ["DWG", "GRF"]
     ]
   }, {
-    "date": "2018-10-20",
+    "date": "2019-01-26",
     "matches": [
-      ["KT", "iG"],
-      ["RNG", "G2"]
+      ["KZ", "AFs"],
+      ["SBG", "HLE"]
     ]
   }, {
-    "date": "2018-10-21",
+    "date": "2019-01-27",
     "matches": [
-      ["AFs", "C9"],
-      ["FNC", "EDG"]
+      ["SKT", "DWG"],
+      ["JAG", "GEN"]
+    ]
+  }, {
+    "date": "2019-01-30",
+    "matches": [
+      ["DWG", "SBG"],
+      ["AFs", "JAG"]
+    ]
+  }, {
+    "date": "2019-01-31",
+    "matches": [
+      ["GRF", "SKT"],
+      ["GEN", "KT"]
+    ]
+  }, {
+    "date": "2019-02-01",
+    "matches": [
+      ["KZ", "DWG"],
+      ["JAG", "HLE"]
+    ]
+  }, {
+    "date": "2019-02-02",
+    "matches": [
+      ["AFs", "KT"],
+      ["GRF", "SBG"]
+    ]
+  }, {
+    "date": "2019-02-03",
+    "matches": [
+      ["KZ", "GEN"],
+      ["SKT", "HLE"]
+    ]
+  }, {
+    "date": "2019-02-13",
+    "matches": [
+      ["HLE", "GEN"],
+      ["SKT", "KZ"]
+    ]
+  }, {
+    "date": "2019-02-14",
+    "matches": [
+      ["DWG", "AFs"],
+      ["SBG", "JAG"]
+    ]
+  }, {
+    "date": "2019-02-15",
+    "matches": [
+      ["GRF", "KT"],
+      ["HLE", "KZ"]
+    ]
+  }, {
+    "date": "2019-02-16",
+    "matches": [
+      ["GEN", "SKT"],
+      ["JAG", "DWG"]
+    ]
+  }, {
+    "date": "2019-02-17",
+    "matches": [
+      ["GRF", "AFs"],
+      ["SBG", "KT"]
+    ]
+  }, {
+    "date": "2019-02-20",
+    "matches": [
+      ["GEN", "GRF"],
+      ["KT", "SKT"]
+    ]
+  }, {
+    "date": "2019-02-21",
+    "matches": [
+      ["JAG", "KZ"],
+      ["AFs", "SBG"]
+    ]
+  }, {
+    "date": "2019-02-22",
+    "matches": [
+      ["HLE", "DWG"],
+      ["KT", "GRF"]
+    ]
+  }, {
+    "date": "2019-02-23",
+    "matches": [
+      ["SBG", "KZ"],
+      ["GEN", "JAG"]
+    ]
+  }, {
+    "date": "2019-02-24",
+    "matches": [
+      ["DWG", "SKT"],
+      ["HLE", "AFs"]
+    ]
+  }, {
+    "date": "2019-02-28",
+    "matches": [
+      ["SBG", "AFs"],
+      ["DWG", "JAG"]
+    ]
+  }, {
+    "date": "2019-03-01",
+    "matches": [
+      ["KZ", "HLE"],
+      ["SKT", "GEN"]
+    ]
+  }, {
+    "date": "2019-03-02",
+    "matches": [
+      ["AFs", "DWG"],
+      ["JAG", "SBG"]
+    ]
+  }, {
+    "date": "2019-03-03",
+    "matches": [
+      ["GEN", "HLE"],
+      ["KZ", "SKT"]
+    ]
+  }, {
+    "date": "2019-03-07",
+    "matches": [
+      ["SBG", "DWG"],
+      ["JAG", "AFs"]
+    ]
+  }, {
+    "date": "2019-03-08",
+    "matches": [
+      ["SKT", "GRF"],
+      ["KT", "GEN"]
+    ]
+  }, {
+    "date": "2019-03-09",
+    "matches": [
+      ["HLE", "JAG"],
+      ["DWG", "KZ"]
+    ]
+  }, {
+    "date": "2019-03-10",
+    "matches": [
+      ["KT", "AFs"],
+      ["SBG", "GRF"]
+    ]
+  }, {
+    "date": "2019-03-14",
+    "matches": [
+      ["GRF", "GEN"],
+      ["SKT", "KT"]
+    ]
+  }, {
+    "date": "2019-03-15",
+    "matches": [
+      ["KZ", "JAG"],
+      ["DWG", "HLE"]
+    ]
+  }, {
+    "date": "2019-03-16",
+    "matches": [
+      ["AFs", "GRF"],
+      ["KT", "SBG"]
+    ]
+  }, {
+    "date": "2019-03-17",
+    "matches": [
+      ["HLE", "SKT"],
+      ["GEN", "KZ"]
+    ]
+  }, {
+    "date": "2019-03-21",
+    "matches": [
+      ["GRF", "HLE"],
+      ["KZ", "KT"]
+    ]
+  }, {
+    "date": "2019-03-22",
+    "matches": [
+      ["AFs", "GEN"],
+      ["SKT", "SBG"]
+    ]
+  }, {
+    "date": "2019-03-23",
+    "matches": [
+      ["JAG", "KT"],
+      ["GRF", "DWG"]
+    ]
+  }, {
+    "date": "2019-03-24",
+    "matches": [
+      ["HLE", "SBG"],
+      ["AFs", "KZ"]
+    ]
+  }, {
+    "date": "2019-03-28",
+    "matches": [
+      ["JAG", "SKT"],
+      ["GEN", "DWG"]
+    ]
+  }, {
+    "date": "2019-03-29",
+    "matches": [
+      ["HLE", "KT"],
+      ["GRF", "KZ"]
+    ]
+  }, {
+    "date": "2019-03-30",
+    "matches": [
+      ["SBG", "GEN"],
+      ["SKT", "AFs"]
+    ]
+  }, {
+    "date": "2019-03-31",
+    "matches": [
+      ["JAG", "GRF"],
+      ["KT", "DWG"]
     ]
   }]
 }
