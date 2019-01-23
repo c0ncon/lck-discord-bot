@@ -8,6 +8,7 @@ _obj
 _test
 pkg/
 src/github.com/
+src/golang.org/
 
 # Architecture specific extensions/prefixes
 *.[568vq]
