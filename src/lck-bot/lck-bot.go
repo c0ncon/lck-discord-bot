@@ -61,7 +61,7 @@ func main() {
 	log.Printf("Bot invite URL:\n\thttps://discordapp.com/oauth2/authorize?client_id=%s&scope=bot\n", user.ID)
 
 	sc := make(chan os.Signal, 1)
-	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt, os.Kill)
+	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM)
 	<-sc
 
 	dg.Close()
@@ -117,6 +117,12 @@ func loadToken(token *string) {
 	} else {
 		flag.StringVar(&t, "t", "", "Bot Token")
 		flag.Parse()
+		f, err := os.Create(".token")
+		if err != nil {
+			log.Fatalln("error creating file,", err)
+		}
+		defer f.Close()
+		f.WriteString(t)
 	}
 	*token = t
 }
