@@ -21,11 +21,7 @@ var (
 	schedules        []schedule
 	weekdayKor       = [...]string{"일", "월", "화", "수", "목", "금", "토"}
 	imgRespRegexp, _ = regexp.Compile("^\\(([\\w\\d\\s가-힣]+)\\)$")
-	imageUrls        = map[string]string{
-		"씨밸럼아": "https://pbs.twimg.com/media/Dm3RgfxUUAAanib.jpg:orig",
-		"띠용":   "https://pbs.twimg.com/media/Ds6EGTCU0AED2XJ.jpg:orig",
-		"상남자":  "https://pbs.twimg.com/media/Dr3F_c1U0AA60Zw.jpg:orig",
-	}
+	imageURLs        = map[string]string{}
 )
 
 type schedule struct {
@@ -38,6 +34,7 @@ type match []string
 func init() {
 	loadToken(&token)
 	loadSchedules("schedules.json", &schedules)
+	loadImageURLs(&imageURLs)
 }
 
 func main() {
@@ -84,10 +81,10 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			return
 		case "i":
 			str := imgRespRegexp.FindStringSubmatch(m.Content)[1]
-			if imageUrls[str] != "" {
+			if imageURLs[str] != "" {
 				s.ChannelMessageSendEmbed(m.ChannelID, &discordgo.MessageEmbed{
 					Image: &discordgo.MessageEmbedImage{
-						URL: imageUrls[str],
+						URL: imageURLs[str],
 					},
 				})
 			}
@@ -130,15 +127,31 @@ func loadToken(token *string) {
 func loadSchedules(path string, sc *[]schedule) {
 	jsonFile, err := os.Open(path)
 	if err != nil {
-		log.Fatalln("error opening file,", err)
+		log.Panicln("error opening file,", err)
 	}
 	defer jsonFile.Close()
 
 	byteValue, err := ioutil.ReadAll(jsonFile)
 	if err != nil {
-		panic(err)
+		log.Panicln(err)
 	}
 	json.Unmarshal(byteValue, sc)
+}
+
+func loadImageURLs(urls *map[string]string) {
+	if _, err := os.Stat("imageurls.json"); err == nil {
+		jsonFile, err := os.Open("imageurls.json")
+		if err != nil {
+			log.Fatalln(err)
+		}
+		defer jsonFile.Close()
+
+		byteValue, err := ioutil.ReadAll(jsonFile)
+		if err != nil {
+			log.Fatalln(err)
+		}
+		json.Unmarshal(byteValue, urls)
+	}
 }
 
 func getNextMatch() string {
