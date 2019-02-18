@@ -4,8 +4,8 @@ import (
 	"bufio"
 	"encoding/json"
 	"flag"
-	"fmt"
 	"io/ioutil"
+	"log"
 	"os"
 	"os/signal"
 	"regexp"
@@ -18,7 +18,7 @@ import (
 
 var (
 	token            string
-	schedules        Schedules
+	schedules        []schedule
 	weekdayKor       = [...]string{"일", "월", "화", "수", "목", "금", "토"}
 	imgRespRegexp, _ = regexp.Compile("^\\(([\\w\\d\\s가-힣]+)\\)$")
 	imageUrls        = map[string]string{
@@ -28,16 +28,12 @@ var (
 	}
 )
 
-type Schedules struct {
-	Schedules []Schedule `json:"schedules"`
-}
-
-type Schedule struct {
+type schedule struct {
 	Date    string  `json:"date"`
-	Matches []Match `json:"matches"`
+	Matches []match `json:"matches"`
 }
 
-type Match []string
+type match []string
 
 func init() {
 	loadToken(&token)
@@ -47,26 +43,23 @@ func init() {
 func main() {
 	dg, err := discordgo.New("Bot " + token)
 	if err != nil {
-		fmt.Println("error creating Discord session,", err)
-		return
+		log.Panicln("error creating Discord session,", err)
 	}
 
 	dg.AddHandler(messageCreate)
 
 	err = dg.Open()
 	if err != nil {
-		fmt.Println("error opening connection,", err)
-		return
+		log.Panicln("error opening connection,", err)
 	}
 
 	user, err := dg.User("@me")
 	if err != nil {
-		fmt.Println("error opening connection,", err)
-		return
+		log.Panicln("error opening connection,", err)
 	}
-	fmt.Println("Bot is now running. Press CTRL-C to exit.")
-	fmt.Println("Bot invite URL:")
-	fmt.Printf("\thttps://discordapp.com/oauth2/authorize?client_id=%s&scope=bot\n", user.ID)
+	log.Println("Bot is now running. Press CTRL-C to exit.")
+	log.Printf("Bot invite URL:\n\thttps://discordapp.com/oauth2/authorize?client_id=%s&scope=bot\n", user.ID)
+
 	sc := make(chan os.Signal, 1)
 	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt, os.Kill)
 	<-sc
@@ -83,8 +76,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if matched {
 		c, _ := s.State.Channel(m.ChannelID)
 		g, _ := s.State.Guild(c.GuildID)
-		msg := fmt.Sprintf("%s: %s@%s#%s", t, m.Author.Username, g.Name, c.Name)
-		consoleLog(m.Timestamp, msg)
+		log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
 
 		switch t {
 		case "s":
@@ -114,12 +106,6 @@ func stringMatch(str string) (bool, string) {
 	}
 }
 
-func consoleLog(timestamp discordgo.Timestamp, msg string) {
-	t, _ := time.Parse(time.RFC3339, string(timestamp))
-	t = t.Add(9 * time.Hour)
-	fmt.Printf("%s %s\n", t.Format("2006-01-02 15:04"), msg)
-}
-
 func loadToken(token *string) {
 	var t string
 	if _, err := os.Stat(".token"); err == nil {
@@ -135,11 +121,10 @@ func loadToken(token *string) {
 	*token = t
 }
 
-func loadSchedules(path string, sc *Schedules) {
+func loadSchedules(path string, sc *[]schedule) {
 	jsonFile, err := os.Open(path)
 	if err != nil {
-		fmt.Println("error opening file,", err)
-		os.Exit(1)
+		log.Fatalln("error opening file,", err)
 	}
 	defer jsonFile.Close()
 
@@ -155,7 +140,7 @@ func getNextMatch() string {
 	today = time.Date(today.Year(), today.Month(), today.Day(), 00, 00, 00, 00, time.Local)
 	nextMatch := "잘몰르겠음 몬가.. 몬가 일어나고잇음"
 
-	for _, sc := range schedules.Schedules {
+	for _, sc := range schedules {
 		t, _ := time.Parse("2006-01-02", sc.Date)
 
 		if t.After(today) {
