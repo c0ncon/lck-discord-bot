@@ -9,6 +9,7 @@ import (
 	"os"
 	"os/signal"
 	"regexp"
+	"sort"
 	"strings"
 	"syscall"
 	"time"
@@ -18,22 +19,25 @@ import (
 
 var (
 	token            string
-	schedules        []schedule
+	matches          []match
+	matchMap         = map[string][]string{}
+	dates            []string
 	weekdayKor       = [...]string{"일", "월", "화", "수", "목", "금", "토"}
 	imgRespRegexp, _ = regexp.Compile("^\\(([\\w\\d\\s가-힣]+)\\)$")
 	imageURLs        = map[string]string{}
 )
 
-type schedule struct {
-	Date    string  `json:"date"`
-	Matches []match `json:"matches"`
+type match struct {
+	Date string `json:"date"`
+	Time string `json:"time"`
+	Home string `json:"home"`
+	Away string `json:"away"`
 }
-
-type match []string
 
 func init() {
 	loadToken(&token)
-	loadSchedules("schedules.json", &schedules)
+	loadSchedules("schedules.json", &matches)
+	makeScheduleMap(matches, matchMap, &dates)
 	loadImageURLs(&imageURLs)
 }
 
@@ -124,7 +128,7 @@ func loadToken(token *string) {
 	*token = t
 }
 
-func loadSchedules(path string, sc *[]schedule) {
+func loadSchedules(path string, matches *[]match) {
 	jsonFile, err := os.Open(path)
 	if err != nil {
 		log.Panicln("error opening file,", err)
@@ -135,7 +139,17 @@ func loadSchedules(path string, sc *[]schedule) {
 	if err != nil {
 		log.Panicln(err)
 	}
-	json.Unmarshal(byteValue, sc)
+	json.Unmarshal(byteValue, matches)
+}
+
+func makeScheduleMap(matches []match, matchMap map[string][]string, dates *[]string) {
+	for _, match := range matches {
+		matchMap[match.Date] = append(matchMap[match.Date], match.Home+" vs "+match.Away)
+	}
+	for date := range matchMap {
+		*dates = append(*dates, date)
+	}
+	sort.Strings(*dates)
 }
 
 func loadImageURLs(urls *map[string]string) {
@@ -159,16 +173,10 @@ func getNextMatch() string {
 	today = time.Date(today.Year(), today.Month(), today.Day(), 00, 00, 00, 00, time.Local)
 	nextMatch := "잘몰르겠음 몬가.. 몬가 일어나고잇음"
 
-	for _, sc := range schedules {
-		t, _ := time.Parse("2006-01-02", sc.Date)
-
+	for _, date := range dates {
+		t, _ := time.Parse("2006-01-02", date)
 		if t.After(today) {
-			matches := make([]string, len(sc.Matches))
-			for i, m := range sc.Matches {
-				matches[i] = strings.Join(m, " vs ")
-			}
-
-			nextMatch = sc.Date + "(" + weekdayKor[t.Weekday()] + "): " + strings.Join(matches, " / ")
+			nextMatch = date + "(" + weekdayKor[t.Weekday()] + "): " + strings.Join(matchMap[date], " / ")
 			break
 		}
 	}

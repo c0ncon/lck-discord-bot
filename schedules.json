@@ -1,271 +1,1082 @@
-[{
-  "date": "2019-01-16",
-  "matches": [
-    ["SKT", "JAG"],
-    ["DWG", "GEN"]
-  ]
-}, {
-  "date": "2019-01-17",
-  "matches": [
-    ["KT", "HLE"],
-    ["KZ", "GRF"]
-  ]
-}, {
-  "date": "2019-01-18",
-  "matches": [
-    ["GEN", "SBG"],
-    ["AFs", "SKT"]
-  ]
-}, {
-  "date": "2019-01-19",
-  "matches": [
-    ["DWG", "KT"],
-    ["GRF", "JAG"]
-  ]
-}, {
-  "date": "2019-01-20",
-  "matches": [
-    ["KZ", "SBG"],
-    ["AFs", "HLE"]
-  ]
-}, {
-  "date": "2019-01-23",
-  "matches": [
-    ["KT", "KZ"],
-    ["HLE", "GRF"]
-  ]
-}, {
-  "date": "2019-01-24",
-  "matches": [
-    ["SBG", "SKT"],
-    ["GEN", "AFs"]
-  ]
-}, {
-  "date": "2019-01-25",
-  "matches": [
-    ["KT", "JAG"],
-    ["DWG", "GRF"]
-  ]
-}, {
-  "date": "2019-01-26",
-  "matches": [
-    ["KZ", "AFs"],
-    ["SBG", "HLE"]
-  ]
-}, {
-  "date": "2019-01-27",
-  "matches": [
-    ["SKT", "DWG"],
-    ["JAG", "GEN"]
-  ]
-}, {
-  "date": "2019-01-30",
-  "matches": [
-    ["DWG", "SBG"],
-    ["AFs", "JAG"]
-  ]
-}, {
-  "date": "2019-01-31",
-  "matches": [
-    ["GRF", "SKT"],
-    ["GEN", "KT"]
-  ]
-}, {
-  "date": "2019-02-01",
-  "matches": [
-    ["KZ", "DWG"],
-    ["JAG", "HLE"]
-  ]
-}, {
-  "date": "2019-02-02",
-  "matches": [
-    ["AFs", "KT"],
-    ["GRF", "SBG"]
-  ]
-}, {
-  "date": "2019-02-03",
-  "matches": [
-    ["KZ", "GEN"],
-    ["SKT", "HLE"]
-  ]
-}, {
-  "date": "2019-02-13",
-  "matches": [
-    ["HLE", "GEN"],
-    ["SKT", "KZ"]
-  ]
-}, {
-  "date": "2019-02-14",
-  "matches": [
-    ["DWG", "AFs"],
-    ["SBG", "JAG"]
-  ]
-}, {
-  "date": "2019-02-15",
-  "matches": [
-    ["GRF", "KT"],
-    ["HLE", "KZ"]
-  ]
-}, {
-  "date": "2019-02-16",
-  "matches": [
-    ["GEN", "SKT"],
-    ["JAG", "DWG"]
-  ]
-}, {
-  "date": "2019-02-17",
-  "matches": [
-    ["GRF", "AFs"],
-    ["SBG", "KT"]
-  ]
-}, {
-  "date": "2019-02-20",
-  "matches": [
-    ["GEN", "GRF"],
-    ["KT", "SKT"]
-  ]
-}, {
-  "date": "2019-02-21",
-  "matches": [
-    ["JAG", "KZ"],
-    ["AFs", "SBG"]
-  ]
-}, {
-  "date": "2019-02-22",
-  "matches": [
-    ["HLE", "DWG"],
-    ["KT", "GRF"]
-  ]
-}, {
-  "date": "2019-02-23",
-  "matches": [
-    ["SBG", "KZ"],
-    ["GEN", "JAG"]
-  ]
-}, {
-  "date": "2019-02-24",
-  "matches": [
-    ["DWG", "SKT"],
-    ["HLE", "AFs"]
-  ]
-}, {
-  "date": "2019-02-28",
-  "matches": [
-    ["SBG", "AFs"],
-    ["DWG", "JAG"]
-  ]
-}, {
-  "date": "2019-03-01",
-  "matches": [
-    ["KZ", "HLE"],
-    ["SKT", "GEN"]
-  ]
-}, {
-  "date": "2019-03-02",
-  "matches": [
-    ["AFs", "DWG"],
-    ["JAG", "SBG"]
-  ]
-}, {
-  "date": "2019-03-03",
-  "matches": [
-    ["GEN", "HLE"],
-    ["KZ", "SKT"]
-  ]
-}, {
-  "date": "2019-03-07",
-  "matches": [
-    ["SBG", "DWG"],
-    ["JAG", "AFs"]
-  ]
-}, {
-  "date": "2019-03-08",
-  "matches": [
-    ["SKT", "GRF"],
-    ["KT", "GEN"]
-  ]
-}, {
-  "date": "2019-03-09",
-  "matches": [
-    ["HLE", "JAG"],
-    ["DWG", "KZ"]
-  ]
-}, {
-  "date": "2019-03-10",
-  "matches": [
-    ["KT", "AFs"],
-    ["SBG", "GRF"]
-  ]
-}, {
-  "date": "2019-03-14",
-  "matches": [
-    ["GRF", "GEN"],
-    ["SKT", "KT"]
-  ]
-}, {
-  "date": "2019-03-15",
-  "matches": [
-    ["KZ", "JAG"],
-    ["DWG", "HLE"]
-  ]
-}, {
-  "date": "2019-03-16",
-  "matches": [
-    ["AFs", "GRF"],
-    ["KT", "SBG"]
-  ]
-}, {
-  "date": "2019-03-17",
-  "matches": [
-    ["HLE", "SKT"],
-    ["GEN", "KZ"]
-  ]
-}, {
-  "date": "2019-03-21",
-  "matches": [
-    ["GRF", "HLE"],
-    ["KZ", "KT"]
-  ]
-}, {
-  "date": "2019-03-22",
-  "matches": [
-    ["AFs", "GEN"],
-    ["SKT", "SBG"]
-  ]
-}, {
-  "date": "2019-03-23",
-  "matches": [
-    ["JAG", "KT"],
-    ["GRF", "DWG"]
-  ]
-}, {
-  "date": "2019-03-24",
-  "matches": [
-    ["HLE", "SBG"],
-    ["AFs", "KZ"]
-  ]
-}, {
-  "date": "2019-03-28",
-  "matches": [
-    ["JAG", "SKT"],
-    ["GEN", "DWG"]
-  ]
-}, {
-  "date": "2019-03-29",
-  "matches": [
-    ["HLE", "KT"],
-    ["GRF", "KZ"]
-  ]
-}, {
-  "date": "2019-03-30",
-  "matches": [
-    ["SBG", "GEN"],
-    ["SKT", "AFs"]
-  ]
-}, {
-  "date": "2019-03-31",
-  "matches": [
-    ["JAG", "GRF"],
-    ["KT", "DWG"]
-  ]
-}]
+[
+  {
+    "date": "2019-01-16",
+    "time": "17:00",
+    "home": "SKT",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-01-16",
+    "time": "20:00",
+    "home": "DWG",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-01-17",
+    "time": "17:00",
+    "home": "KT",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-01-17",
+    "time": "20:00",
+    "home": "KZ",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-01-18",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "SBG"
+  },
+  {
+    "date": "2019-01-18",
+    "time": "20:00",
+    "home": "AFs",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-01-19",
+    "time": "17:00",
+    "home": "DWG",
+    "away": "KT"
+  },
+  {
+    "date": "2019-01-19",
+    "time": "20:00",
+    "home": "GRF",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-01-20",
+    "time": "17:00",
+    "home": "KZ",
+    "away": "SBG"
+  },
+  {
+    "date": "2019-01-20",
+    "time": "20:00",
+    "home": "AFs",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-01-23",
+    "time": "17:00",
+    "home": "KT",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-01-23",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-01-24",
+    "time": "17:00",
+    "home": "SBG",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-01-24",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "AFs"
+  },
+  {
+    "date": "2019-01-25",
+    "time": "17:00",
+    "home": "KT",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-01-25",
+    "time": "20:00",
+    "home": "DWG",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-01-26",
+    "time": "17:00",
+    "home": "KZ",
+    "away": "AFs"
+  },
+  {
+    "date": "2019-01-26",
+    "time": "20:00",
+    "home": "SBG",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-01-27",
+    "time": "17:00",
+    "home": "SKT",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-01-27",
+    "time": "20:00",
+    "home": "JAG",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-01-30",
+    "time": "17:00",
+    "home": "DWG",
+    "away": "SBG"
+  },
+  {
+    "date": "2019-01-30",
+    "time": "20:00",
+    "home": "AFs",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-01-31",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-01-31",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "KT"
+  },
+  {
+    "date": "2019-02-01",
+    "time": "17:00",
+    "home": "KZ",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-02-01",
+    "time": "20:00",
+    "home": "JAG",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-02-02",
+    "time": "17:00",
+    "home": "AFs",
+    "away": "KT"
+  },
+  {
+    "date": "2019-02-02",
+    "time": "20:00",
+    "home": "GRF",
+    "away": "SBG"
+  },
+  {
+    "date": "2019-02-03",
+    "time": "17:00",
+    "home": "KZ",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-02-03",
+    "time": "20:00",
+    "home": "SKT",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-02-13",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-02-13",
+    "time": "20:00",
+    "home": "SKT",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-02-14",
+    "time": "17:00",
+    "home": "DWG",
+    "away": "AFs"
+  },
+  {
+    "date": "2019-02-14",
+    "time": "20:00",
+    "home": "SBG",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-02-15",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "KT"
+  },
+  {
+    "date": "2019-02-15",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-02-16",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-02-16",
+    "time": "20:00",
+    "home": "JAG",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-02-17",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "AFs"
+  },
+  {
+    "date": "2019-02-17",
+    "time": "20:00",
+    "home": "SBG",
+    "away": "KT"
+  },
+  {
+    "date": "2019-02-20",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-02-20",
+    "time": "20:00",
+    "home": "KT",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-02-21",
+    "time": "17:00",
+    "home": "JAG",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-02-21",
+    "time": "20:00",
+    "home": "AFs",
+    "away": "SBG"
+  },
+  {
+    "date": "2019-02-22",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-02-22",
+    "time": "20:00",
+    "home": "KT",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-02-23",
+    "time": "17:00",
+    "home": "SBG",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-02-23",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-02-24",
+    "time": "17:00",
+    "home": "DWG",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-02-24",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "AFs"
+  },
+  {
+    "date": "2019-02-28",
+    "time": "17:00",
+    "home": "SBG",
+    "away": "AFs"
+  },
+  {
+    "date": "2019-02-28",
+    "time": "20:00",
+    "home": "DWG",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-03-01",
+    "time": "17:00",
+    "home": "KZ",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-03-01",
+    "time": "20:00",
+    "home": "SKT",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-03-02",
+    "time": "17:00",
+    "home": "AFs",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-03-02",
+    "time": "20:00",
+    "home": "JAG",
+    "away": "SBG"
+  },
+  {
+    "date": "2019-03-03",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-03-03",
+    "time": "20:00",
+    "home": "KZ",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-03-07",
+    "time": "17:00",
+    "home": "SBG",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-03-07",
+    "time": "20:00",
+    "home": "JAG",
+    "away": "AFs"
+  },
+  {
+    "date": "2019-03-08",
+    "time": "17:00",
+    "home": "SKT",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-03-08",
+    "time": "20:00",
+    "home": "KT",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-03-09",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-03-09",
+    "time": "20:00",
+    "home": "DWG",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-03-10",
+    "time": "17:00",
+    "home": "KT",
+    "away": "AFs"
+  },
+  {
+    "date": "2019-03-10",
+    "time": "20:00",
+    "home": "SBG",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-03-14",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-03-14",
+    "time": "20:00",
+    "home": "SKT",
+    "away": "KT"
+  },
+  {
+    "date": "2019-03-15",
+    "time": "17:00",
+    "home": "KZ",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-03-15",
+    "time": "20:00",
+    "home": "DWG",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-03-16",
+    "time": "17:00",
+    "home": "AFs",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-03-16",
+    "time": "20:00",
+    "home": "KT",
+    "away": "SBG"
+  },
+  {
+    "date": "2019-03-17",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-03-17",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-03-21",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-03-21",
+    "time": "20:00",
+    "home": "KZ",
+    "away": "KT"
+  },
+  {
+    "date": "2019-03-22",
+    "time": "17:00",
+    "home": "AFs",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-03-22",
+    "time": "20:00",
+    "home": "SKT",
+    "away": "SBG"
+  },
+  {
+    "date": "2019-03-23",
+    "time": "17:00",
+    "home": "JAG",
+    "away": "KT"
+  },
+  {
+    "date": "2019-03-23",
+    "time": "20:00",
+    "home": "GRF",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-03-24",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "SBG"
+  },
+  {
+    "date": "2019-03-24",
+    "time": "20:00",
+    "home": "AFs",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-03-28",
+    "time": "17:00",
+    "home": "JAG",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-03-28",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-03-29",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "KT"
+  },
+  {
+    "date": "2019-03-29",
+    "time": "20:00",
+    "home": "GRF",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-03-30",
+    "time": "17:00",
+    "home": "SBG",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-03-30",
+    "time": "20:00",
+    "home": "SKT",
+    "away": "AFs"
+  },
+  {
+    "date": "2019-03-31",
+    "time": "17:00",
+    "home": "JAG",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-03-31",
+    "time": "20:00",
+    "home": "KT",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-06-05",
+    "time": "17:00",
+    "home": "JAG",
+    "away": "KT"
+  },
+  {
+    "date": "2019-06-05",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-06-06",
+    "time": "17:00",
+    "home": "SB",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-06-06",
+    "time": "20:00",
+    "home": "GRF",
+    "away": "AF"
+  },
+  {
+    "date": "2019-06-07",
+    "time": "17:00",
+    "home": "T1",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-06-07",
+    "time": "20:00",
+    "home": "KZ",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-06-08",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "KT"
+  },
+  {
+    "date": "2019-06-08",
+    "time": "20:00",
+    "home": "DWG",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-06-09",
+    "time": "17:00",
+    "home": "SB",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-06-09",
+    "time": "20:00",
+    "home": "AF",
+    "away": "T1"
+  },
+  {
+    "date": "2019-06-12",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "AF"
+  },
+  {
+    "date": "2019-06-12",
+    "time": "20:00",
+    "home": "GRF",
+    "away": "SB"
+  },
+  {
+    "date": "2019-06-13",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-06-13",
+    "time": "20:00",
+    "home": "KZ",
+    "away": "T1"
+  },
+  {
+    "date": "2019-06-14",
+    "time": "17:00",
+    "home": "KT",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-06-14",
+    "time": "20:00",
+    "home": "GRF",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-06-15",
+    "time": "17:00",
+    "home": "AF",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-06-15",
+    "time": "20:00",
+    "home": "T1",
+    "away": "SB"
+  },
+  {
+    "date": "2019-06-16",
+    "time": "17:00",
+    "home": "KT",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-06-16",
+    "time": "20:00",
+    "home": "SB",
+    "away": "KT"
+  },
+  {
+    "date": "2019-06-19",
+    "time": "17:00",
+    "home": "DWG",
+    "away": "T1"
+  },
+  {
+    "date": "2019-06-19",
+    "time": "20:00",
+    "home": "KZ",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-06-20",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "KT"
+  },
+  {
+    "date": "2019-06-20",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-06-21",
+    "time": "17:00",
+    "home": "SB",
+    "away": "AF"
+  },
+  {
+    "date": "2019-06-21",
+    "time": "20:00",
+    "home": "KZ",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-06-22",
+    "time": "17:00",
+    "home": "T1",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-06-22",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-06-23",
+    "time": "17:00",
+    "home": "AF",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-06-23",
+    "time": "20:00",
+    "home": "SB",
+    "away": "KT"
+  },
+  {
+    "date": "2019-06-26",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "SB"
+  },
+  {
+    "date": "2019-06-26",
+    "time": "20:00",
+    "home": "JAG",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-06-27",
+    "time": "17:00",
+    "home": "DWG",
+    "away": "AF"
+  },
+  {
+    "date": "2019-06-27",
+    "time": "20:00",
+    "home": "T1",
+    "away": "KT"
+  },
+  {
+    "date": "2019-06-28",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-06-28",
+    "time": "20:00",
+    "home": "JAG",
+    "away": "SB"
+  },
+  {
+    "date": "2019-06-29",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "T1"
+  },
+  {
+    "date": "2019-06-29",
+    "time": "20:00",
+    "home": "KT",
+    "away": "AF"
+  },
+  {
+    "date": "2019-06-30",
+    "time": "17:00",
+    "home": "DWG",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-06-30",
+    "time": "20:00",
+    "home": "KZ",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-07-10",
+    "time": "17:00",
+    "home": "KT",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-07-10",
+    "time": "20:00",
+    "home": "T1",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-07-11",
+    "time": "17:00",
+    "home": "SB",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-07-11",
+    "time": "20:00",
+    "home": "AF",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-07-12",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-07-12",
+    "time": "20:00",
+    "home": "KT",
+    "away": "T1"
+  },
+  {
+    "date": "2019-07-13",
+    "time": "17:00",
+    "home": "SB",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-07-13",
+    "time": "20:00",
+    "home": "DWG",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-07-14",
+    "time": "17:00",
+    "home": "AF",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-07-14",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-07-18",
+    "time": "17:00",
+    "home": "SB",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-07-18",
+    "time": "20:00",
+    "home": "KZ",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-07-19",
+    "time": "17:00",
+    "home": "JAG",
+    "away": "T1"
+  },
+  {
+    "date": "2019-07-19",
+    "time": "20:00",
+    "home": "AF",
+    "away": "KT"
+  },
+  {
+    "date": "2019-07-20",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-07-20",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-07-21",
+    "time": "17:00",
+    "home": "JAG",
+    "away": "AF"
+  },
+  {
+    "date": "2019-07-21",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "SB"
+  },
+  {
+    "date": "2019-07-25",
+    "time": "17:00",
+    "home": "KT",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-07-25",
+    "time": "20:00",
+    "home": "T1",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-07-26",
+    "time": "17:00",
+    "home": "DWG",
+    "away": "SB"
+  },
+  {
+    "date": "2019-07-26",
+    "time": "20:00",
+    "home": "JAG",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-07-27",
+    "time": "17:00",
+    "home": "KZ",
+    "away": "AF"
+  },
+  {
+    "date": "2019-07-27",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "KT"
+  },
+  {
+    "date": "2019-07-28",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "T1"
+  },
+  {
+    "date": "2019-07-28",
+    "time": "20:00",
+    "home": "DWG",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-08-01",
+    "time": "17:00",
+    "home": "T1",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-08-01",
+    "time": "20:00",
+    "home": "AF",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-08-02",
+    "time": "17:00",
+    "home": "KT",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-08-02",
+    "time": "20:00",
+    "home": "SB",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-08-03",
+    "time": "17:00",
+    "home": "JAG",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-08-03",
+    "time": "20:00",
+    "home": "T1",
+    "away": "AF"
+  },
+  {
+    "date": "2019-08-04",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-08-04",
+    "time": "20:00",
+    "home": "KZ",
+    "away": "SB"
+  },
+  {
+    "date": "2019-08-08",
+    "time": "17:00",
+    "home": "JAG",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-08-08",
+    "time": "20:00",
+    "home": "DWG",
+    "away": "KT"
+  },
+  {
+    "date": "2019-08-09",
+    "time": "17:00",
+    "home": "AF",
+    "away": "SB"
+  },
+  {
+    "date": "2019-08-09",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-08-10",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "T1"
+  },
+  {
+    "date": "2019-08-10",
+    "time": "20:00",
+    "home": "KT",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-08-11",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "KZ"
+  },
+  {
+    "date": "2019-08-11",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "AF"
+  },
+  {
+    "date": "2019-08-15",
+    "time": "17:00",
+    "home": "T1",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-08-15",
+    "time": "20:00",
+    "home": "KT",
+    "away": "SB"
+  },
+  {
+    "date": "2019-08-16",
+    "time": "17:00",
+    "home": "GRF",
+    "away": "JAG"
+  },
+  {
+    "date": "2019-08-16",
+    "time": "20:00",
+    "home": "AF",
+    "away": "HLE"
+  },
+  {
+    "date": "2019-08-17",
+    "time": "17:00",
+    "home": "KZ",
+    "away": "KT"
+  },
+  {
+    "date": "2019-08-17",
+    "time": "20:00",
+    "home": "SB",
+    "away": "T1"
+  },
+  {
+    "date": "2019-08-18",
+    "time": "17:00",
+    "home": "DWG",
+    "away": "GEN"
+  },
+  {
+    "date": "2019-08-18",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "GRF"
+  }
+]
