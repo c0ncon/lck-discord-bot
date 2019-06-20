@@ -77,15 +77,16 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if matched {
 		c, _ := s.State.Channel(m.ChannelID)
 		g, _ := s.State.Guild(c.GuildID)
-		log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
 
 		switch t {
 		case "s":
+			log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
 			s.ChannelMessageSend(m.ChannelID, getNextMatch())
 			return
 		case "i":
 			str := imgRespRegexp.FindStringSubmatch(m.Content)[1]
 			if imageURLs[str] != "" {
+				log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
 				s.ChannelMessageSendEmbed(m.ChannelID, &discordgo.MessageEmbed{
 					Image: &discordgo.MessageEmbedImage{
 						URL: imageURLs[str],
