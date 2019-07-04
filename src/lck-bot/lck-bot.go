@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"encoding/json"
 	"flag"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -145,7 +146,8 @@ func loadSchedules(path string, matches *[]match) {
 
 func makeScheduleMap(matches []match, matchMap map[string][]string, dates *[]string) {
 	for _, match := range matches {
-		matchMap[match.Date] = append(matchMap[match.Date], match.Home+" vs "+match.Away)
+		m := fmt.Sprintf("%s\t%-15svs%15s", match.Time, match.Home, match.Away)
+		matchMap[match.Date] = append(matchMap[match.Date], m)
 	}
 	for date := range matchMap {
 		*dates = append(*dates, date)
@@ -176,8 +178,8 @@ func getNextMatch() string {
 
 	for _, date := range dates {
 		t, _ := time.Parse("2006-01-02", date)
-		if t.After(today) {
-			nextMatch = date + "(" + weekdayKor[t.Weekday()] + "): " + strings.Join(matchMap[date], " / ")
+		if t.Equal(today) || t.After(today) {
+			nextMatch = fmt.Sprintf("```%s\n\n%s```", date+"("+weekdayKor[t.Weekday()]+")", strings.Join(matchMap[date], "\n"))
 			break
 		}
 	}
