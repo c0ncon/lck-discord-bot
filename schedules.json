@@ -1186,5 +1186,503 @@
     "time": "16:00",
     "home": "GRF",
     "away": "SKT"
+  },
+  {
+    "date": "2019-10-02",
+    "time": "20:00",
+    "home": "CG",
+    "away": "UOL"
+  },
+  {
+    "date": "2019-10-02",
+    "time": "21:00",
+    "home": "DFM",
+    "away": "SPY"
+  },
+  {
+    "date": "2019-10-02",
+    "time": "22:00",
+    "home": "MMM",
+    "away": "UOL"
+  },
+  {
+    "date": "2019-10-02",
+    "time": "23:00",
+    "home": "DFM",
+    "away": "ISG"
+  },
+  {
+    "date": "2019-10-03",
+    "time": "00:00",
+    "home": "MMM",
+    "away": "CG"
+  },
+  {
+    "date": "2019-10-03",
+    "time": "01:00",
+    "home": "SPY",
+    "away": "ISG"
+  },
+  {
+    "date": "2019-10-03",
+    "time": "20:00",
+    "home": "RYL",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-10-03",
+    "time": "21:00",
+    "home": "MG",
+    "away": "HKA"
+  },
+  {
+    "date": "2019-10-03",
+    "time": "22:00",
+    "home": "DWG",
+    "away": "FLA"
+  },
+  {
+    "date": "2019-10-03",
+    "time": "23:00",
+    "home": "MG",
+    "away": "LK"
+  },
+  {
+    "date": "2019-10-04",
+    "time": "00:00",
+    "home": "RYL",
+    "away": "FLA"
+  },
+  {
+    "date": "2019-10-04",
+    "time": "01:00",
+    "home": "HKA",
+    "away": "LK"
+  },
+  {
+    "date": "2019-10-04",
+    "time": "19:00",
+    "home": "UOL",
+    "away": "CG"
+  },
+  {
+    "date": "2019-10-04",
+    "time": "20:00",
+    "home": "SPY",
+    "away": "DFM"
+  },
+  {
+    "date": "2019-10-04",
+    "time": "21:00",
+    "home": "UOL",
+    "away": "MMM"
+  },
+  {
+    "date": "2019-10-04",
+    "time": "22:00",
+    "home": "ISG",
+    "away": "DFM"
+  },
+  {
+    "date": "2019-10-04",
+    "time": "23:00",
+    "home": "CG",
+    "away": "MMM"
+  },
+  {
+    "date": "2019-10-05",
+    "time": "00:00",
+    "home": "ISG",
+    "away": "SPY"
+  },
+  {
+    "date": "2019-10-05",
+    "time": "19:00",
+    "home": "DWG",
+    "away": "RYL"
+  },
+  {
+    "date": "2019-10-05",
+    "time": "20:00",
+    "home": "HKA",
+    "away": "MG"
+  },
+  {
+    "date": "2019-10-05",
+    "time": "21:00",
+    "home": "FLA",
+    "away": "DWG"
+  },
+  {
+    "date": "2019-10-05",
+    "time": "22:00",
+    "home": "LK",
+    "away": "MG"
+  },
+  {
+    "date": "2019-10-05",
+    "time": "23:00",
+    "home": "FLA",
+    "away": "RYL"
+  },
+  {
+    "date": "2019-10-06",
+    "time": "00:00",
+    "home": "LK",
+    "away": "HKA"
+  },
+  {
+    "date": "2019-10-07",
+    "time": "20:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-08",
+    "time": "01:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-08",
+    "time": "20:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-09",
+    "time": "01:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-12",
+    "time": "21:00",
+    "home": "FNC",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-10-12",
+    "time": "22:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-12",
+    "time": "23:00",
+    "home": "IG",
+    "away": "AHQ"
+  },
+  {
+    "date": "2019-10-13",
+    "time": "00:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-13",
+    "time": "01:00",
+    "home": "JT",
+    "away": "FPX"
+  },
+  {
+    "date": "2019-10-13",
+    "time": "02:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-13",
+    "time": "21:00",
+    "home": "SKT",
+    "away": "RNG"
+  },
+  {
+    "date": "2019-10-13",
+    "time": "22:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-13",
+    "time": "23:00",
+    "home": "TL",
+    "away": "IG"
+  },
+  {
+    "date": "2019-10-14",
+    "time": "00:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-14",
+    "time": "01:00",
+    "home": "GRF",
+    "away": "G2"
+  },
+  {
+    "date": "2019-10-14",
+    "time": "02:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-14",
+    "time": "22:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-14",
+    "time": "23:00",
+    "home": "AHQ",
+    "away": "TL"
+  },
+  {
+    "date": "2019-10-15",
+    "time": "00:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-15",
+    "time": "01:00",
+    "home": "JT",
+    "away": "GAM"
+  },
+  {
+    "date": "2019-10-15",
+    "time": "02:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-15",
+    "time": "03:00",
+    "home": "G2",
+    "away": "C9"
+  },
+  {
+    "date": "2019-10-15",
+    "time": "22:00",
+    "home": "RNG",
+    "away": "FNC"
+  },
+  {
+    "date": "2019-10-15",
+    "time": "23:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-16",
+    "time": "00:00",
+    "home": "FPX",
+    "away": "GAM"
+  },
+  {
+    "date": "2019-10-16",
+    "time": "01:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-16",
+    "time": "02:00",
+    "home": "C9",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-10-16",
+    "time": "03:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-17",
+    "time": "22:00",
+    "home": "GAM",
+    "away": "FPX"
+  },
+  {
+    "date": "2019-10-17",
+    "time": "23:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-18",
+    "time": "00:00",
+    "home": "GAM",
+    "away": "JT"
+  },
+  {
+    "date": "2019-10-18",
+    "time": "01:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-18",
+    "time": "02:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-18",
+    "time": "03:00",
+    "home": "FPX",
+    "away": "JT"
+  },
+  {
+    "date": "2019-10-18",
+    "time": "22:00",
+    "home": "GRF",
+    "away": "C9"
+  },
+  {
+    "date": "2019-10-18",
+    "time": "23:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-19",
+    "time": "00:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-19",
+    "time": "01:00",
+    "home": "C9",
+    "away": "G2"
+  },
+  {
+    "date": "2019-10-19",
+    "time": "02:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-19",
+    "time": "03:00",
+    "home": "G2",
+    "away": "GRF"
+  },
+  {
+    "date": "2019-10-19",
+    "time": "21:00",
+    "home": "RNG",
+    "away": "SKT"
+  },
+  {
+    "date": "2019-10-19",
+    "time": "22:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-19",
+    "time": "23:00",
+    "home": "SKT",
+    "away": "FNC"
+  },
+  {
+    "date": "2019-10-20",
+    "time": "00:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-20",
+    "time": "01:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-20",
+    "time": "02:00",
+    "home": "FNC",
+    "away": "RNG"
+  },
+  {
+    "date": "2019-10-20",
+    "time": "21:00",
+    "home": "AHQ",
+    "away": "IG"
+  },
+  {
+    "date": "2019-10-20",
+    "time": "22:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-20",
+    "time": "23:00",
+    "home": "TL",
+    "away": "AHQ"
+  },
+  {
+    "date": "2019-10-21",
+    "time": "00:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-21",
+    "time": "01:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-21",
+    "time": "02:00",
+    "home": "IG",
+    "away": "TL"
+  },
+  {
+    "date": "2019-10-26",
+    "time": "19:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-27",
+    "time": "00:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-27",
+    "time": "20:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-10-28",
+    "time": "01:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-11-02",
+    "time": "20:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-11-03",
+    "time": "20:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2019-11-10",
+    "time": "21:00",
+    "home": "TBD",
+    "away": "TBD"
   }
 ]
