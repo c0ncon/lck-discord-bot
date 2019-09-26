@@ -185,7 +185,9 @@ func getNextMatch() string {
 	for _, date := range dates {
 		t, _ := time.Parse("2006-01-02", date)
 		if t.Equal(today) || t.After(today) {
-			nextMatch = fmt.Sprintf("```%s\n\n%s```", date+"("+weekdayKor[t.Weekday()]+")", strings.Join(matchMap[date], "\n"))
+			nextMatch = fmt.Sprintf("```%s\n\n%s```",
+				date+"("+weekdayKor[t.Weekday()]+")",
+				strings.Join(matchMap[date], "\n"))
 			break
 		}
 	}
@@ -201,12 +203,16 @@ func getNextWeeklyMatch() string {
 	for _, date := range dates {
 		t, _ := time.Parse("2006-01-02", date)
 		if t.Equal(today) || t.After(today) {
-			startDay := t.AddDate(0, 0, -int(t.Weekday()))
+			startDay := t.AddDate(0, 0, -int(t.Weekday())+1)
 			for i := 0; i < 7; i++ {
 				d := startDay.AddDate(0, 0, i)
 				yyyymmdd := d.Format("2006-01-02")
 				if match, ok := matchMap[yyyymmdd]; ok {
-					nextMatch = append(nextMatch, fmt.Sprintf("```%s\n\n%s```", yyyymmdd+"("+weekdayKor[d.Weekday()]+")", strings.Join(match, "\n")))
+					nextMatch = append(
+						nextMatch,
+						fmt.Sprintf("```%s\n\n%s```",
+							yyyymmdd+"("+weekdayKor[d.Weekday()]+")",
+							strings.Join(match, "\n")))
 				}
 			}
 			break
