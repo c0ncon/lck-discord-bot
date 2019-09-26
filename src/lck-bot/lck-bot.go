@@ -84,6 +84,10 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
 			s.ChannelMessageSend(m.ChannelID, getNextMatch())
 			return
+		case "w":
+			log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
+			s.ChannelMessageSend(m.ChannelID, getNextWeeklyMatch())
+			return
 		case "i":
 			str := imgRespRegexp.FindStringSubmatch(m.Content)[1]
 			if imageURLs[str] != "" {
@@ -102,6 +106,8 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 func stringMatch(str string) (bool, string) {
 	if str == "뜬뜬" || str == "ㄸㄸ" {
 		return true, "s"
+	} else if str == "!weekly" {
+		return true, "w"
 	} else if imgRespRegexp.MatchString(str) {
 		return true, "i"
 	} else {
@@ -146,7 +152,7 @@ func loadSchedules(path string, matches *[]match) {
 
 func makeScheduleMap(matches []match, matchMap map[string][]string, dates *[]string) {
 	for _, match := range matches {
-		m := fmt.Sprintf("%s\t%-15svs%15s", match.Time, match.Home, match.Away)
+		m := fmt.Sprintf("%s\t%-8svs%8s", match.Time, match.Home, match.Away)
 		matchMap[match.Date] = append(matchMap[match.Date], m)
 	}
 	for date := range matchMap {
@@ -185,4 +191,30 @@ func getNextMatch() string {
 	}
 
 	return nextMatch
+}
+
+func getNextWeeklyMatch() string {
+	today := time.Now()
+	today = time.Date(today.Year(), today.Month(), today.Day(), 00, 00, 00, 00, time.Local)
+	var nextMatch []string
+
+	for _, date := range dates {
+		t, _ := time.Parse("2006-01-02", date)
+		if t.Equal(today) || t.After(today) {
+			startDay := t.AddDate(0, 0, -int(t.Weekday()))
+			for i := 0; i < 7; i++ {
+				d := startDay.AddDate(0, 0, i)
+				yyyymmdd := d.Format("2006-01-02")
+				if match, ok := matchMap[yyyymmdd]; ok {
+					nextMatch = append(nextMatch, fmt.Sprintf("```%s\n\n%s```", yyyymmdd+"("+weekdayKor[d.Weekday()]+")", strings.Join(match, "\n")))
+				}
+			}
+			break
+		}
+	}
+
+	if len(nextMatch) == 0 {
+		return "잘몰르겠음 몬가.. 몬가 일어나고잇음"
+	}
+	return strings.Join(nextMatch, "\n")
 }
