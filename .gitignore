@@ -28,3 +28,5 @@ _testmain.go
 
 # Discord token
 .token
+
+tmp/
