@@ -33,7 +33,7 @@ var (
 	imageURLs         = map[string]string{}
 	remoteScheduleURL = "https://raw.githubusercontent.com/c0ncon/lck-discord-bot/master/schedule.json"
 	scheduleFilePath  = "./schedule.json"
-	tmpSchedulePath = "./tmp/schedule.json"
+	tmpSchedulePath   = "./tmp/schedule.json"
 )
 
 type match struct {
@@ -160,7 +160,7 @@ func loadSchedules(path string, matches *[]match) {
 
 func makeScheduleMap(matches []match, matchMap map[string][]string, dates *[]string) {
 	for _, match := range matches {
-		m := fmt.Sprintf("%8s%-8svs%8s", match.Time, match.Home, match.Away)
+		m := fmt.Sprintf("%-8s%-8svs%8s", match.Time, match.Home, match.Away)
 		matchMap[match.Date] = append(matchMap[match.Date], m)
 	}
 	for date := range matchMap {
