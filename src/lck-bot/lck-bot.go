@@ -2,11 +2,16 @@ package main
 
 import (
 	"bufio"
+	"bytes"
+	"crypto/sha256"
+	"encoding/base64"
 	"encoding/json"
 	"flag"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
+	"net/http"
 	"os"
 	"os/signal"
 	"regexp"
@@ -19,13 +24,16 @@ import (
 )
 
 var (
-	token            string
-	matches          []match
-	matchMap         = map[string][]string{}
-	dates            []string
-	weekdayKor       = [...]string{"일", "월", "화", "수", "목", "금", "토"}
-	imgRespRegexp, _ = regexp.Compile("^\\(([\\w\\d\\s가-힣]+)\\)$")
-	imageURLs        = map[string]string{}
+	token             string
+	matches           []match
+	matchMap          = map[string][]string{}
+	dates             []string
+	weekdayKor        = [...]string{"일", "월", "화", "수", "목", "금", "토"}
+	imgRespRegexp, _  = regexp.Compile("^\\(([\\w\\d\\s가-힣]+)\\)$")
+	imageURLs         = map[string]string{}
+	remoteScheduleURL = "https://raw.githubusercontent.com/c0ncon/lck-discord-bot/master/schedule.json"
+	scheduleFilePath  = "./schedule.json"
+	tmpSchedulePath = "./tmp/schedule.json"
 )
 
 type match struct {
@@ -37,7 +45,7 @@ type match struct {
 
 func init() {
 	loadToken(&token)
-	loadSchedules("schedules.json", &matches)
+	loadSchedules(scheduleFilePath, &matches)
 	makeScheduleMap(matches, matchMap, &dates)
 	loadImageURLs(&imageURLs)
 }
@@ -152,7 +160,7 @@ func loadSchedules(path string, matches *[]match) {
 
 func makeScheduleMap(matches []match, matchMap map[string][]string, dates *[]string) {
 	for _, match := range matches {
-		m := fmt.Sprintf("%s\t%-8svs%8s", match.Time, match.Home, match.Away)
+		m := fmt.Sprintf("%8s%-8svs%8s", match.Time, match.Home, match.Away)
 		matchMap[match.Date] = append(matchMap[match.Date], m)
 	}
 	for date := range matchMap {
@@ -223,4 +231,63 @@ func getNextWeeklyMatch() string {
 		return "잘몰르겠음 몬가.. 몬가 일어나고잇음"
 	}
 	return strings.Join(nextMatch, "\n")
+}
+
+func downloadSchedule() error {
+	if _, err := os.Stat("./tmp"); os.IsNotExist(err) {
+		os.Mkdir("./tmp", 755)
+	}
+	resp, err := http.Get(remoteScheduleURL)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	buf := new(bytes.Buffer)
+	buf.ReadFrom(resp.Body)
+	newBody := strings.ReplaceAll(buf.String(), "\n", "\r\n")
+
+	out, err := os.Create(tmpSchedulePath)
+	if err != nil {
+		return err
+	}
+	defer out.Close()
+
+	_, err = io.Copy(out, strings.NewReader(newBody))
+	return err
+}
+
+func isScheduleChanged() bool {
+	f1, _ := os.Open(scheduleFilePath)
+	defer f1.Close()
+	f2, _ := os.Open(tmpSchedulePath)
+	defer f2.Close()
+
+	h1 := sha256.New()
+	if _, err := io.Copy(h1, f1); err != nil {
+		log.Fatal(err)
+	}
+	h2 := sha256.New()
+	if _, err := io.Copy(h2, f2); err != nil {
+		log.Fatal(err)
+	}
+	h1Str := base64.URLEncoding.EncodeToString(h1.Sum(nil))
+	h2Str := base64.URLEncoding.EncodeToString(h2.Sum(nil))
+
+	return h1Str != h2Str
+}
+
+func updateSchedule() {
+	matches = nil
+	for date := range matchMap {
+		delete(matchMap, date)
+	}
+	dates = nil
+
+	err := os.Rename(tmpSchedulePath, scheduleFilePath)
+	if err != nil {
+		log.Fatal(err)
+	}
+	loadSchedules(scheduleFilePath, &matches)
+	makeScheduleMap(matches, matchMap, &dates)
 }
