@@ -1364,8 +1364,8 @@
   {
     "date": "2019-10-12",
     "time": "22:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "RNG",
+    "away": "CG"
   },
   {
     "date": "2019-10-12",
@@ -1376,8 +1376,8 @@
   {
     "date": "2019-10-12",
     "time": "24:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "DWG",
+    "away": "TL"
   },
   {
     "date": "2019-10-12",
@@ -1388,8 +1388,8 @@
   {
     "date": "2019-10-12",
     "time": "26:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "GAM",
+    "away": "SPY"
   },
   {
     "date": "2019-10-13",
@@ -1400,8 +1400,8 @@
   {
     "date": "2019-10-13",
     "time": "22:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "FNC",
+    "away": "CG"
   },
   {
     "date": "2019-10-13",
@@ -1412,8 +1412,8 @@
   {
     "date": "2019-10-13",
     "time": "24:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "AHQ",
+    "away": "DWG"
   },
   {
     "date": "2019-10-13",
@@ -1424,14 +1424,14 @@
   {
     "date": "2019-10-13",
     "time": "26:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "C9",
+    "away": "HKA"
   },
   {
     "date": "2019-10-14",
     "time": "22:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "IG",
+    "away": "DWG"
   },
   {
     "date": "2019-10-14",
@@ -1442,8 +1442,8 @@
   {
     "date": "2019-10-14",
     "time": "24:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "FPX",
+    "away": "SPY"
   },
   {
     "date": "2019-10-14",
@@ -1454,8 +1454,8 @@
   {
     "date": "2019-10-14",
     "time": "26:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "GRF",
+    "away": "HKA"
   },
   {
     "date": "2019-10-14",
@@ -1472,8 +1472,8 @@
   {
     "date": "2019-10-15",
     "time": "23:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "CG",
+    "away": "SKT"
   },
   {
     "date": "2019-10-15",
@@ -1484,8 +1484,8 @@
   {
     "date": "2019-10-15",
     "time": "25:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "SPY",
+    "away": "JT"
   },
   {
     "date": "2019-10-15",
@@ -1496,8 +1496,8 @@
   {
     "date": "2019-10-15",
     "time": "27:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "HKA",
+    "away": "G2"
   },
   {
     "date": "2019-10-17",
@@ -1508,8 +1508,8 @@
   {
     "date": "2019-10-17",
     "time": "23:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "JT",
+    "away": "SPY"
   },
   {
     "date": "2019-10-17",
@@ -1520,14 +1520,14 @@
   {
     "date": "2019-10-17",
     "time": "25:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "SPY",
+    "away": "FPX"
   },
   {
     "date": "2019-10-17",
     "time": "26:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "SPY",
+    "away": "GAM"
   },
   {
     "date": "2019-10-17",
@@ -1544,14 +1544,14 @@
   {
     "date": "2019-10-18",
     "time": "23:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "G2",
+    "away": "HKA"
   },
   {
     "date": "2019-10-18",
     "time": "24:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "HKA",
+    "away": "GRF"
   },
   {
     "date": "2019-10-18",
@@ -1562,8 +1562,8 @@
   {
     "date": "2019-10-18",
     "time": "26:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "HKA",
+    "away": "C9"
   },
   {
     "date": "2019-10-18",
@@ -1580,8 +1580,8 @@
   {
     "date": "2019-10-19",
     "time": "22:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "CG",
+    "away": "FNC"
   },
   {
     "date": "2019-10-19",
@@ -1592,14 +1592,14 @@
   {
     "date": "2019-10-19",
     "time": "24:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "CG",
+    "away": "RNG"
   },
   {
     "date": "2019-10-19",
     "time": "25:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "SKT",
+    "away": "CG"
   },
   {
     "date": "2019-10-19",
@@ -1616,8 +1616,8 @@
   {
     "date": "2019-10-20",
     "time": "22:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "TL",
+    "away": "DWG"
   },
   {
     "date": "2019-10-20",
@@ -1628,14 +1628,14 @@
   {
     "date": "2019-10-20",
     "time": "24:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "DWG",
+    "away": "IG"
   },
   {
     "date": "2019-10-20",
     "time": "25:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "DWG",
+    "away": "AHQ"
   },
   {
     "date": "2019-10-20",
