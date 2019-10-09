@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'net/http'
 require 'json'
 require 'time'
@@ -14,8 +16,8 @@ TEAM_ALIAS = {
   'KT Rolster': 'KT',
   'Hanwha Life Esports': 'HLE',
   'JIN AIR Greenwings': 'JAG'
-}
-WEEKDAY_KOR = ['일', '월', '화', '수', '목', '금', '토']
+}.freeze
+WEEKDAY_KOR = %w[일 월 화 수 목 금 토].freeze
 
 def fetch(uri_str, limit = 10)
   raise ArgumentError, 'too many HTTP redirects' if limit == 0
@@ -23,7 +25,7 @@ def fetch(uri_str, limit = 10)
   response = Net::HTTP.get_response(URI(uri_str))
 
   case response
-  when Net::HTTPSuccess then
+  when Net::HTTPSuccess
     response
   when Net::HTTPRedirection then
     location = response['location']
@@ -40,14 +42,14 @@ resp = fetch URL
 schedule_str = resp.body.strip
 
 schedule_str.gsub!("\xEF\xBB\xBF".force_encoding(Encoding::BINARY), '')
-schedule_str.gsub!(/(\w+\s?:)/) {|key|
+schedule_str.gsub!(/(\w+\s?:)/) do |key|
   begin
     Time.parse key
     key
   rescue ArgumentError
     "\"#{key[0...-1].strip}\":"
   end
-}
+end
 schedule_str = schedule_str[1...-1]
 
 schedule = JSON.parse schedule_str
@@ -55,23 +57,23 @@ schedule = JSON.parse schedule_str
 
 sc = []
 schedule.each do |s|
-  s['leagueData'].select {|d|
+  s['leagueData'].select do |d|
     d['name'] == '챔피언스'
-  }.each do |champions|
-    sc += champions['list'].sort_by {|m|
+  end.each do |champions|
+    sc += champions['list'].sort_by do |m|
       m['order']
-    }.map{|m|
-      teamA = "#{m['agencyA']} #{m['teamNameA']}".strip
-      teamA = TEAM_ALIAS[teamA.to_sym] || teamA
-      teamB = "#{m['agencyB']} #{m['teamNameB']}".strip
-      teamB = TEAM_ALIAS[teamB.to_sym] || teamB
+    end.map do |m|
+      team_a = "#{m['agencyA']} #{m['teamNameA']}".strip
+      team_a = TEAM_ALIAS[team_a.to_sym] || team_a
+      team_b = "#{m['agencyB']} #{m['teamNameB']}".strip
+      team_b = TEAM_ALIAS[team_b.to_sym] || team_b
       {
         date: Date.parse(s['leagueDate']).strftime('%Y-%m-%d'),
         time: m['startTime'],
-        home: TEAM_ALIAS[teamA.to_sym] || teamA,
-        away: TEAM_ALIAS[teamB.to_sym] || teamB
+        home: TEAM_ALIAS[team_a.to_sym] || team_a,
+        away: TEAM_ALIAS[team_b.to_sym] || team_b
       }
-    }
+    end
   end
 end
 
