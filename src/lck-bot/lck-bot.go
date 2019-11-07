@@ -211,7 +211,7 @@ func getNextWeeklyMatch() string {
 	for _, date := range dates {
 		t, _ := time.Parse("2006-01-02", date)
 		if t.Equal(today) || t.After(today) {
-			startDay := t.AddDate(0, 0, -int(t.Weekday())+1)
+			startDay := t.AddDate(0, 0, -((int(t.Weekday()) + 6) % 7))
 			for i := 0; i < 7; i++ {
 				d := startDay.AddDate(0, 0, i)
 				yyyymmdd := d.Format("2006-01-02")
