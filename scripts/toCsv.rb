@@ -1,6 +1,9 @@
 require 'json'
 
-jsonfile = File.read '../schedule.json'
+filename = ARGV[0]
+return if filename.nil?
+
+jsonfile = File.read filename
 data = JSON.parse(jsonfile)
 
 puts 'Subject,Start Date,Start Time'
