@@ -28,8 +28,4 @@ latest_schedule = events.map do |event|
     away: event['match']['teams'].last['code']
   }
 end
-File.write('./2020-spring.json', latest_schedule.to_json)
-
-# full_schedule = JSON.parse File.read('../schedule.json')
-# full_schedule += latest_schedule
-# File.write('./schedule-tmp.json', full_schedule.to_json)
+puts latest_schedule.to_json
