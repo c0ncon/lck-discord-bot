@@ -2196,16 +2196,16 @@
     "away": "GEN"
   },
   {
-    "date": "2020-04-14",
-    "time": "17:00",
-    "home": "T1",
-    "away": "AF"
+    "date": "2020-04-15",
+    "time": "15:00",
+    "home": "GEN",
+    "away": "KT"
   },
   {
     "date": "2020-04-15",
-    "time": "14:00",
-    "home": "GEN",
-    "away": "KT"
+    "time": "17:00",
+    "home": "T1",
+    "away": "AF"
   },
   {
     "date": "2020-04-15",
@@ -2224,5 +2224,29 @@
     "time": "20:00",
     "home": "DRX",
     "away": "APK"
+  },
+  {
+    "date": "2020-04-18",
+    "time": "17:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-04-20",
+    "time": "17:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-04-22",
+    "time": "17:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-04-25",
+    "time": "17:00",
+    "home": "TBD",
+    "away": "TBD"
   }
 ]
