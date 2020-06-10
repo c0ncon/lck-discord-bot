@@ -23,17 +23,23 @@ import (
 	"github.com/bwmarrin/discordgo"
 )
 
-var (
-	token             string
-	matches           []match
-	matchMap          = map[string][]string{}
-	dates             []string
-	weekdayKor        = [...]string{"일", "월", "화", "수", "목", "금", "토"}
-	imgRespRegexp, _  = regexp.Compile("^\\(([\\w\\d\\s가-힣]+)\\)$")
-	imageURLs         = map[string]string{}
+const (
 	remoteScheduleURL = "https://raw.githubusercontent.com/c0ncon/lck-discord-bot/master/schedule.json"
 	scheduleFilePath  = "./schedule.json"
 	tmpSchedulePath   = "./tmp/schedule.json"
+	tokenFilePath     = "./.token"
+	imageURLsPath     = "./imageurls.json"
+)
+
+var (
+	token              string
+	matches            []match
+	matchMap           = map[string][]string{}
+	dates              []string
+	weekdayKor         = [...]string{"일", "월", "화", "수", "목", "금", "토"}
+	imgRespRegexp, _   = regexp.Compile("^\\(([\\w\\d\\s가-힣]+)\\)$")
+	imageURLs          = map[string]string{}
+	authenticatedUsers []string
 )
 
 type match struct {
@@ -44,10 +50,10 @@ type match struct {
 }
 
 func init() {
-	loadToken(&token)
-	loadSchedules(scheduleFilePath, &matches)
-	makeScheduleMap(matches, matchMap, &dates)
-	loadImageURLs(&imageURLs)
+	token = loadToken(tokenFilePath)
+	matches = loadSchedules(scheduleFilePath)
+	matchMap, dates = makeScheduleMap(matches)
+	imageURLs = loadImageURLs(imageURLsPath)
 }
 
 func main() {
@@ -88,15 +94,15 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		g, _ := s.State.Guild(c.GuildID)
 
 		switch t {
-		case "s":
+		case "next_match":
 			log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
 			s.ChannelMessageSend(m.ChannelID, getNextMatch())
 			return
-		case "w":
+		case "weekly_match":
 			log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
 			s.ChannelMessageSend(m.ChannelID, getNextWeeklyMatch())
 			return
-		case "i":
+		case "image_response":
 			str := imgRespRegexp.FindStringSubmatch(m.Content)[1]
 			if imageURLs[str] != "" {
 				log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
@@ -113,20 +119,20 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 func stringMatch(str string) (bool, string) {
 	if str == "뜬뜬" || str == "ㄸㄸ" {
-		return true, "s"
+		return true, "next_match"
 	} else if str == "!weekly" {
-		return true, "w"
+		return true, "weekly_match"
 	} else if imgRespRegexp.MatchString(str) {
-		return true, "i"
+		return true, "image_response"
 	} else {
 		return false, ""
 	}
 }
 
-func loadToken(token *string) {
+func loadToken(path string) string {
 	var t string
-	if _, err := os.Stat(".token"); err == nil {
-		tokenFile, _ := os.Open(".token")
+	if _, err := os.Stat(path); err == nil {
+		tokenFile, _ := os.Open(path)
 		defer tokenFile.Close()
 		scanner := bufio.NewScanner(tokenFile)
 		scanner.Scan()
@@ -134,17 +140,19 @@ func loadToken(token *string) {
 	} else {
 		flag.StringVar(&t, "t", "", "Bot Token")
 		flag.Parse()
-		f, err := os.Create(".token")
+		f, err := os.Create(path)
 		if err != nil {
 			log.Fatalln("error creating file,", err)
 		}
 		defer f.Close()
 		f.WriteString(t)
 	}
-	*token = t
+
+	return t
 }
 
-func loadSchedules(path string, matches *[]match) {
+func loadSchedules(path string) []match {
+	var matches []match
 	jsonFile, err := os.Open(path)
 	if err != nil {
 		log.Panicln("error opening file,", err)
@@ -155,23 +163,31 @@ func loadSchedules(path string, matches *[]match) {
 	if err != nil {
 		log.Panicln(err)
 	}
-	json.Unmarshal(byteValue, matches)
+	json.Unmarshal(byteValue, &matches)
+
+	return matches
 }
 
-func makeScheduleMap(matches []match, matchMap map[string][]string, dates *[]string) {
+func makeScheduleMap(matches []match) (map[string][]string, []string) {
+	var matchMap = make(map[string][]string)
+	var dates []string
 	for _, match := range matches {
 		m := fmt.Sprintf("%-8s%-8svs%8s", match.Time, match.Home, match.Away)
 		matchMap[match.Date] = append(matchMap[match.Date], m)
 	}
 	for date := range matchMap {
-		*dates = append(*dates, date)
+		dates = append(dates, date)
 	}
-	sort.Strings(*dates)
+	sort.Strings(dates)
+
+	return matchMap, dates
 }
 
-func loadImageURLs(urls *map[string]string) {
-	if _, err := os.Stat("imageurls.json"); err == nil {
-		jsonFile, err := os.Open("imageurls.json")
+func loadImageURLs(path string) map[string]string {
+	var urls = make(map[string]string)
+
+	if _, err := os.Stat(path); err == nil {
+		jsonFile, err := os.Open(path)
 		if err != nil {
 			log.Fatalln(err)
 		}
@@ -181,8 +197,10 @@ func loadImageURLs(urls *map[string]string) {
 		if err != nil {
 			log.Fatalln(err)
 		}
-		json.Unmarshal(byteValue, urls)
+		json.Unmarshal(byteValue, &urls)
 	}
+
+	return urls
 }
 
 func getNextMatch() string {
@@ -288,6 +306,6 @@ func updateSchedule() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	loadSchedules(scheduleFilePath, &matches)
-	makeScheduleMap(matches, matchMap, &dates)
+	matches = loadSchedules(scheduleFilePath)
+	matchMap, dates = makeScheduleMap(matches)
 }
