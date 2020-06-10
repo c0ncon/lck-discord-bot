@@ -29,17 +29,18 @@ const (
 	tmpSchedulePath   = "./tmp/schedule.json"
 	tokenFilePath     = "./.token"
 	imageURLsPath     = "./imageurls.json"
+	adminListPath     = "./.admin"
 )
 
 var (
-	token              string
-	matches            []match
-	matchMap           = map[string][]string{}
-	dates              []string
-	weekdayKor         = [...]string{"일", "월", "화", "수", "목", "금", "토"}
-	imgRespRegexp, _   = regexp.Compile("^\\(([\\w\\d\\s가-힣]+)\\)$")
-	imageURLs          = map[string]string{}
-	authenticatedUsers []string
+	token            string
+	admins           []string
+	matches          []match
+	matchMap         = map[string][]string{}
+	dates            []string
+	weekdayKor       = [...]string{"일", "월", "화", "수", "목", "금", "토"}
+	imgRespRegexp, _ = regexp.Compile("^\\(([\\w\\d\\s가-힣]+)\\)$")
+	imageURLs        = map[string]string{}
 )
 
 type match struct {
@@ -51,6 +52,7 @@ type match struct {
 
 func init() {
 	token = loadToken(tokenFilePath)
+	admins = loadAdminList(adminListPath)
 	matches = loadSchedules(scheduleFilePath)
 	matchMap, dates = makeScheduleMap(matches)
 	imageURLs = loadImageURLs(imageURLsPath)
@@ -88,7 +90,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
-	matched, t := stringMatch(m.Content)
+	matched, t := stringMatch(m)
 	if matched {
 		c, _ := s.State.Channel(m.ChannelID)
 		g, _ := s.State.Guild(c.GuildID)
@@ -113,17 +115,29 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				})
 			}
 			return
+		case "update":
+			log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
+			s.ChannelMessageSend(m.ChannelID, "ㅅㅅ")
+			return
 		}
 	}
 }
 
-func stringMatch(str string) (bool, string) {
+func stringMatch(message *discordgo.MessageCreate) (bool, string) {
+	str := message.Content
 	if str == "뜬뜬" || str == "ㄸㄸ" {
 		return true, "next_match"
 	} else if str == "!weekly" {
 		return true, "weekly_match"
 	} else if imgRespRegexp.MatchString(str) {
 		return true, "image_response"
+	} else if str == "!update" && isAdmin(message.Author.ID) {
+		downloadSchedule(remoteScheduleURL)
+		if isScheduleChanged(scheduleFilePath, tmpSchedulePath) {
+			updateSchedule(tmpSchedulePath, scheduleFilePath)
+			return true, "update"
+		}
+		return false, ""
 	} else {
 		return false, ""
 	}
@@ -149,6 +163,21 @@ func loadToken(path string) string {
 	}
 
 	return t
+}
+
+func loadAdminList(path string) []string {
+	var admins []string
+	if _, err := os.Stat(path); err == nil {
+		file, _ := os.Open(path)
+		defer file.Close()
+
+		scanner := bufio.NewScanner(file)
+		for scanner.Scan() {
+			admins = append(admins, scanner.Text())
+		}
+	}
+
+	return admins
 }
 
 func loadSchedules(path string) []match {
@@ -251,11 +280,11 @@ func getNextWeeklyMatch() string {
 	return strings.Join(nextMatch, "\n")
 }
 
-func downloadSchedule() error {
+func downloadSchedule(scheduleURL string) error {
 	if _, err := os.Stat("./tmp"); os.IsNotExist(err) {
 		os.Mkdir("./tmp", 755)
 	}
-	resp, err := http.Get(remoteScheduleURL)
+	resp, err := http.Get(scheduleURL)
 	if err != nil {
 		return err
 	}
@@ -275,10 +304,13 @@ func downloadSchedule() error {
 	return err
 }
 
-func isScheduleChanged() bool {
-	f1, _ := os.Open(scheduleFilePath)
+func isScheduleChanged(oldPath string, newPath string) bool {
+	f1, err := os.Open(oldPath)
+	if err != nil {
+		return true
+	}
 	defer f1.Close()
-	f2, _ := os.Open(tmpSchedulePath)
+	f2, _ := os.Open(newPath)
 	defer f2.Close()
 
 	h1 := sha256.New()
@@ -295,17 +327,27 @@ func isScheduleChanged() bool {
 	return h1Str != h2Str
 }
 
-func updateSchedule() {
+func updateSchedule(oldPath string, newPath string) {
 	matches = nil
 	for date := range matchMap {
 		delete(matchMap, date)
 	}
 	dates = nil
 
-	err := os.Rename(tmpSchedulePath, scheduleFilePath)
+	err := os.Rename(oldPath, newPath)
 	if err != nil {
 		log.Fatal(err)
 	}
 	matches = loadSchedules(scheduleFilePath)
 	matchMap, dates = makeScheduleMap(matches)
+}
+
+func isAdmin(id string) bool {
+	for _, admin := range admins {
+		if id == admin {
+			return true
+		}
+	}
+
+	return false
 }
