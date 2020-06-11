@@ -13,10 +13,3 @@
   {...},
 ]
 ```
-
-## Usage
-
-```sh
-$ lck-bot -t BOT_TOKEN
-```
-or make ```.token``` file

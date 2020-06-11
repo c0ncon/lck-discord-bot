@@ -27,6 +27,6 @@ _testmain.go
 *.prof
 
 # Discord token
-.token
+config.json
 
 tmp/
