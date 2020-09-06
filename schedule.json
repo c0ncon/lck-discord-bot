@@ -2902,5 +2902,23 @@
     "time": "17:00",
     "home": "DWG",
     "away": "DRX"
+  },
+  {
+    "date": "2020-09-07",
+    "time": "17:00",
+    "home": "KT",
+    "away": "AF"
+  },
+  {
+    "date": "2020-09-08",
+    "time": "17:00",
+    "home": "T1",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-09-09",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "TBD"
   }
 ]
