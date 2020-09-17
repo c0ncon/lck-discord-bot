@@ -2920,5 +2920,479 @@
     "time": "17:00",
     "home": "T1",
     "away": "GEN"
+  },
+  {
+    "date": "2020-09-25",
+    "time": "17:00",
+    "home": "MAD",
+    "away": "ITZ"
+  },
+  {
+    "date": "2020-09-25",
+    "time": "18:00",
+    "home": "PSG",
+    "away": "R7"
+  },
+  {
+    "date": "2020-09-25",
+    "time": "19:00",
+    "home": "LGC",
+    "away": "ITZ"
+  },
+  {
+    "date": "2020-09-25",
+    "time": "20:00",
+    "home": "LGD",
+    "away": "PSG"
+  },
+  {
+    "date": "2020-09-25",
+    "time": "21:00",
+    "home": "TL",
+    "away": "MAD"
+  },
+  {
+    "date": "2020-09-26",
+    "time": "17:00",
+    "home": "R7",
+    "away": "V3"
+  },
+  {
+    "date": "2020-09-26",
+    "time": "18:00",
+    "home": "ITZ",
+    "away": "SUP"
+  },
+  {
+    "date": "2020-09-26",
+    "time": "19:00",
+    "home": "V3",
+    "away": "UOL"
+  },
+  {
+    "date": "2020-09-26",
+    "time": "20:00",
+    "home": "LGD",
+    "away": "R7"
+  },
+  {
+    "date": "2020-09-26",
+    "time": "21:00",
+    "home": "UOL",
+    "away": "PSG"
+  },
+  {
+    "date": "2020-09-26",
+    "time": "22:00",
+    "home": "SUP",
+    "away": "MAD"
+  },
+  {
+    "date": "2020-09-26",
+    "time": "23:00",
+    "home": "TL",
+    "away": "LGC"
+  },
+  {
+    "date": "2020-09-27",
+    "time": "17:00",
+    "home": "V3",
+    "away": "LGD"
+  },
+  {
+    "date": "2020-09-27",
+    "time": "18:00",
+    "home": "R7",
+    "away": "UOL"
+  },
+  {
+    "date": "2020-09-27",
+    "time": "19:00",
+    "home": "PSG",
+    "away": "V3"
+  },
+  {
+    "date": "2020-09-27",
+    "time": "20:00",
+    "home": "UOL",
+    "away": "LGD"
+  },
+  {
+    "date": "2020-09-28",
+    "time": "17:00",
+    "home": "SUP",
+    "away": "TL"
+  },
+  {
+    "date": "2020-09-28",
+    "time": "18:00",
+    "home": "MAD",
+    "away": "LGC"
+  },
+  {
+    "date": "2020-09-28",
+    "time": "19:00",
+    "home": "ITZ",
+    "away": "TL"
+  },
+  {
+    "date": "2020-09-28",
+    "time": "20:00",
+    "home": "LGC",
+    "away": "SUP"
+  },
+  {
+    "date": "2020-09-29",
+    "time": "15:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-09-29",
+    "time": "19:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-09-30",
+    "time": "15:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-09-30",
+    "time": "19:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-03",
+    "time": "17:00",
+    "home": "FLY",
+    "away": "TES"
+  },
+  {
+    "date": "2020-10-03",
+    "time": "18:00",
+    "home": "DRX",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-03",
+    "time": "19:00",
+    "home": "RGE",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-03",
+    "time": "20:00",
+    "home": "DWG",
+    "away": "JDG"
+  },
+  {
+    "date": "2020-10-03",
+    "time": "21:00",
+    "home": "GEN",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-03",
+    "time": "22:00",
+    "home": "TSM",
+    "away": "FNC"
+  },
+  {
+    "date": "2020-10-04",
+    "time": "17:00",
+    "home": "MCX",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-04",
+    "time": "18:00",
+    "home": "G2",
+    "away": "SN"
+  },
+  {
+    "date": "2020-10-04",
+    "time": "19:00",
+    "home": "RGE",
+    "away": "DWG"
+  },
+  {
+    "date": "2020-10-04",
+    "time": "20:00",
+    "home": "JDG",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-04",
+    "time": "21:00",
+    "home": "GEN",
+    "away": "TSM"
+  },
+  {
+    "date": "2020-10-04",
+    "time": "22:00",
+    "home": "FNC",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-05",
+    "time": "17:00",
+    "home": "MCX",
+    "away": "G2"
+  },
+  {
+    "date": "2020-10-05",
+    "time": "18:00",
+    "home": "SN",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-05",
+    "time": "19:00",
+    "home": "DWG",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-05",
+    "time": "20:00",
+    "home": "JDG",
+    "away": "RGE"
+  },
+  {
+    "date": "2020-10-05",
+    "time": "21:00",
+    "home": "FLY",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-05",
+    "time": "22:00",
+    "home": "TES",
+    "away": "DRX"
+  },
+  {
+    "date": "2020-10-06",
+    "time": "17:00",
+    "home": "G2",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-06",
+    "time": "18:00",
+    "home": "SN",
+    "away": "MCX"
+  },
+  {
+    "date": "2020-10-06",
+    "time": "19:00",
+    "home": "DRX",
+    "away": "FLY"
+  },
+  {
+    "date": "2020-10-06",
+    "time": "20:00",
+    "home": "TES",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-06",
+    "time": "21:00",
+    "home": "FNC",
+    "away": "GEN"
+  },
+  {
+    "date": "2020-10-06",
+    "time": "22:00",
+    "home": "TSM",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-08",
+    "time": "17:00",
+    "home": "G2",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-08",
+    "time": "18:00",
+    "home": "MCX",
+    "away": "SN"
+  },
+  {
+    "date": "2020-10-08",
+    "time": "19:00",
+    "home": "G2",
+    "away": "MCX"
+  },
+  {
+    "date": "2020-10-08",
+    "time": "20:00",
+    "home": "SN",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-08",
+    "time": "21:00",
+    "home": "MCX",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-08",
+    "time": "22:00",
+    "home": "SN",
+    "away": "G2"
+  },
+  {
+    "date": "2020-10-09",
+    "time": "17:00",
+    "home": "DWG",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-09",
+    "time": "18:00",
+    "home": "RGE",
+    "away": "JDG"
+  },
+  {
+    "date": "2020-10-09",
+    "time": "19:00",
+    "home": "DWG",
+    "away": "RGE"
+  },
+  {
+    "date": "2020-10-09",
+    "time": "20:00",
+    "home": "JDG",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-09",
+    "time": "21:00",
+    "home": "RGE",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-09",
+    "time": "22:00",
+    "home": "JDG",
+    "away": "DWG"
+  },
+  {
+    "date": "2020-10-10",
+    "time": "17:00",
+    "home": "FNC",
+    "away": "TSM"
+  },
+  {
+    "date": "2020-10-10",
+    "time": "18:00",
+    "home": "GEN",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-10",
+    "time": "19:00",
+    "home": "TSM",
+    "away": "GEN"
+  },
+  {
+    "date": "2020-10-10",
+    "time": "20:00",
+    "home": "FNC",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-10",
+    "time": "21:00",
+    "home": "TSM",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-10",
+    "time": "22:00",
+    "home": "GEN",
+    "away": "FNC"
+  },
+  {
+    "date": "2020-10-11",
+    "time": "17:00",
+    "home": "FLY",
+    "away": "DRX"
+  },
+  {
+    "date": "2020-10-11",
+    "time": "18:00",
+    "home": "TES",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-11",
+    "time": "19:00",
+    "home": "DRX",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-11",
+    "time": "20:00",
+    "home": "TES",
+    "away": "FLY"
+  },
+  {
+    "date": "2020-10-11",
+    "time": "21:00",
+    "home": "FLY",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-11",
+    "time": "22:00",
+    "home": "DRX",
+    "away": "TES"
+  },
+  {
+    "date": "2020-10-15",
+    "time": "19:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-16",
+    "time": "19:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-17",
+    "time": "19:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-18",
+    "time": "19:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-24",
+    "time": "19:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-25",
+    "time": "19:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2020-10-31",
+    "time": "19:00",
+    "home": "TBD",
+    "away": "TBD"
   }
 ]
