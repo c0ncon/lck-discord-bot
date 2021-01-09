@@ -2,7 +2,7 @@ require 'faraday'
 require 'json'
 require 'date'
 
-url = 'https://esports-api.lolesports.com/persisted/gw/getSchedule?hl=ja-JP&leagueId=98767991310872058'
+url = 'https://esports-api.lolesports.com/persisted/gw/getSchedule?hl=ko-KR&leagueId=98767991310872058'
 header = { 'x-api-key': '0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z' }
 
 events = []
