@@ -12,10 +12,14 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"syscall"
+
+	// "os/signal"
 	"regexp"
 	"sort"
 	"strings"
-	"syscall"
+
+	// "syscall"
 	"time"
 
 	"github.com/bwmarrin/discordgo"
@@ -27,6 +31,7 @@ const (
 	tmpSchedulePath   = "./tmp/schedule.json"
 	imageURLsPath     = "./imageurls.json"
 	configPath        = "./config.json"
+	ucalPath          = "./ucal.json"
 )
 
 var (
@@ -37,6 +42,8 @@ var (
 	weekdayKor       = [...]string{"일", "월", "화", "수", "목", "금", "토"}
 	imgRespRegexp, _ = regexp.Compile("^\\(([\\w\\d\\s가-힣]+)\\)$")
 	imageURLs        = map[string]string{}
+	ucal             []string
+	ucalCount        = 0
 )
 
 type match struct {
@@ -56,6 +63,7 @@ func init() {
 	matches = loadSchedules(scheduleFilePath)
 	matchMap, dates = makeScheduleMap(matches)
 	imageURLs = loadImageURLs(imageURLsPath)
+	ucal = loadUcalImages(ucalPath)
 }
 
 func main() {
@@ -117,6 +125,15 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				})
 			}
 			return
+		case "ucal":
+			log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
+			s.ChannelMessageSendEmbed(m.ChannelID, &discordgo.MessageEmbed{
+				Image: &discordgo.MessageEmbedImage{
+					URL: ucal[ucalCount],
+				},
+			})
+			ucalCount = (ucalCount + 1) % len(ucal)
+			return
 		case "update":
 			log.Printf("%s: %s@%s#%s\n", t, m.Author.Username, g.Name, c.Name)
 			s.ChannelMessageSend(m.ChannelID, "ㅅㅅ")
@@ -133,6 +150,8 @@ func stringMatch(message *discordgo.MessageCreate) (bool, string) {
 		return true, "weekly_match"
 	} else if imgRespRegexp.MatchString(str) {
 		return true, "image_response"
+	} else if str == "!유칼" {
+		return true, "ucal"
 	} else if str == "!update" && isAdmin(message.Author.ID) {
 		downloadSchedule(remoteScheduleURL)
 		if isScheduleChanged(scheduleFilePath, tmpSchedulePath) {
@@ -210,6 +229,23 @@ func loadImageURLs(path string) map[string]string {
 		}
 		json.Unmarshal(byteValue, &urls)
 	}
+
+	return urls
+}
+
+func loadUcalImages(path string) []string {
+	var urls []string
+	jsonFile, err := os.Open(path)
+	if err != nil {
+		log.Panicln("error opening file", err)
+	}
+	defer jsonFile.Close()
+
+	byteValue, err := ioutil.ReadAll(jsonFile)
+	if err != nil {
+		log.Panicln(err)
+	}
+	json.Unmarshal(byteValue, &urls)
 
 	return urls
 }
