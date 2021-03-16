@@ -29,9 +29,9 @@ const (
 	remoteScheduleURL = "https://raw.githubusercontent.com/c0ncon/lck-discord-bot/master/schedule.json"
 	scheduleFilePath  = "./schedule.json"
 	tmpSchedulePath   = "./tmp/schedule.json"
-	imageURLsPath     = "./imageurls.json"
-	configPath        = "./config.json"
-	ucalPath          = "./ucal.json"
+	imageURLsPath     = "./config/imageurls.json"
+	configPath        = "./config/config.json"
+	ucalPath          = "./config/ucal.json"
 )
 
 var (
@@ -86,7 +86,7 @@ func main() {
 	log.Println("Bot is now running. Press CTRL-C to exit.")
 	log.Printf("Bot invite URL:\n\thttps://discordapp.com/oauth2/authorize?client_id=%s&scope=bot\n", user.ID)
 
-	dg.UpdateStatus(0, "잘몰르겠음 몬가.. 몬가 일어나고잇음")
+	dg.UpdateGameStatus(0, "잘몰르겠음 몬가.. 몬가 일어나고잇음")
 
 	sc := make(chan os.Signal, 1)
 	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM)
