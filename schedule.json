@@ -538,5 +538,35 @@
     "time": "20:00",
     "home": "DRX",
     "away": "LSB"
+  },
+  {
+    "date": "2021-03-31",
+    "time": "17:00",
+    "home": "NS",
+    "away": "HLE"
+  },
+  {
+    "date": "2021-04-01",
+    "time": "17:00",
+    "home": "DRX",
+    "away": "T1"
+  },
+  {
+    "date": "2021-04-03",
+    "time": "17:00",
+    "home": "DK",
+    "away": "TBD"
+  },
+  {
+    "date": "2021-04-04",
+    "time": "18:00",
+    "home": "GEN",
+    "away": "TBD"
+  },
+  {
+    "date": "2021-04-10",
+    "time": "18:00",
+    "home": "TBD",
+    "away": "TBD"
   }
 ]
