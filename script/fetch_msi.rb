@@ -20,14 +20,20 @@ end
 events.select! { |e| e['state'] == 'unstarted' }
 
 latest_schedule = events.map do |event|
-  # jst = DateTime.parse(event['startTime']).to_time + (3600 * 9)
-  start_date = event['startTime'][0...10]
-  start_hour = (event['startTime'][11..12].to_i + 9).to_s.rjust(2, '0')
+  jst = DateTime.parse(event['startTime']).to_time + (3600 * 9)
   {
-    date: start_date,
-    time: "#{start_hour}:00",
+    date: jst.strftime('%F'),
+    time: jst.strftime('%R'),
     home: event['match']['teams'].first['code'],
     away: event['match']['teams'].last['code']
   }
+  # start_date = event['startTime'][0...10]
+  # start_hour = (event['startTime'][11..12].to_i + 9).to_s.rjust(2, '0')
+  # {
+  #   date: start_date,
+  #   time: "#{start_hour}:00",
+  #   home: event['match']['teams'].first['code'],
+  #   away: event['match']['teams'].last['code']
+  # }
 end
 puts latest_schedule.to_json
