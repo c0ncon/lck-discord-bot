@@ -980,7 +980,547 @@
   {
     "date": "2021-05-23",
     "time": "22:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "RNG",
+    "away": "DK"
+  },
+  {
+    "date": "2021-06-09",
+    "time": "17:00",
+    "home": "LSB",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-06-09",
+    "time": "20:00",
+    "home": "T1",
+    "away": "HLE"
+  },
+  {
+    "date": "2021-06-10",
+    "time": "17:00",
+    "home": "NS",
+    "away": "KT"
+  },
+  {
+    "date": "2021-06-10",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-06-11",
+    "time": "17:00",
+    "home": "BRO",
+    "away": "AF"
+  },
+  {
+    "date": "2021-06-11",
+    "time": "20:00",
+    "home": "T1",
+    "away": "DK"
+  },
+  {
+    "date": "2021-06-12",
+    "time": "17:00",
+    "home": "NS",
+    "away": "LSB"
+  },
+  {
+    "date": "2021-06-12",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "GEN"
+  },
+  {
+    "date": "2021-06-13",
+    "time": "17:00",
+    "home": "KT",
+    "away": "DK"
+  },
+  {
+    "date": "2021-06-13",
+    "time": "20:00",
+    "home": "DRX",
+    "away": "AF"
+  },
+  {
+    "date": "2021-06-16",
+    "time": "17:00",
+    "home": "NS",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-06-16",
+    "time": "20:00",
+    "home": "KT",
+    "away": "GEN"
+  },
+  {
+    "date": "2021-06-17",
+    "time": "17:00",
+    "home": "T1",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-06-17",
+    "time": "20:00",
+    "home": "DK",
+    "away": "AF"
+  },
+  {
+    "date": "2021-06-18",
+    "time": "17:00",
+    "home": "LSB",
+    "away": "HLE"
+  },
+  {
+    "date": "2021-06-18",
+    "time": "20:00",
+    "home": "NS",
+    "away": "GEN"
+  },
+  {
+    "date": "2021-06-19",
+    "time": "17:00",
+    "home": "DK",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-06-19",
+    "time": "20:00",
+    "home": "KT",
+    "away": "AF"
+  },
+  {
+    "date": "2021-06-20",
+    "time": "17:00",
+    "home": "T1",
+    "away": "LSB"
+  },
+  {
+    "date": "2021-06-20",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-06-23",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "AF"
+  },
+  {
+    "date": "2021-06-23",
+    "time": "20:00",
+    "home": "BRO",
+    "away": "DK"
+  },
+  {
+    "date": "2021-06-24",
+    "time": "17:00",
+    "home": "LSB",
+    "away": "GEN"
+  },
+  {
+    "date": "2021-06-24",
+    "time": "20:00",
+    "home": "T1",
+    "away": "NS"
+  },
+  {
+    "date": "2021-06-25",
+    "time": "17:00",
+    "home": "KT",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-06-25",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "DK"
+  },
+  {
+    "date": "2021-06-26",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "AF"
+  },
+  {
+    "date": "2021-06-26",
+    "time": "20:00",
+    "home": "NS",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-06-27",
+    "time": "17:00",
+    "home": "T1",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-06-27",
+    "time": "20:00",
+    "home": "LSB",
+    "away": "KT"
+  },
+  {
+    "date": "2021-06-30",
+    "time": "17:00",
+    "home": "T1",
+    "away": "KT"
+  },
+  {
+    "date": "2021-06-30",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-07-01",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-07-01",
+    "time": "20:00",
+    "home": "LSB",
+    "away": "AF"
+  },
+  {
+    "date": "2021-07-02",
+    "time": "17:00",
+    "home": "NS",
+    "away": "DK"
+  },
+  {
+    "date": "2021-07-02",
+    "time": "20:00",
+    "home": "KT",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-07-03",
+    "time": "17:00",
+    "home": "T1",
+    "away": "AF"
+  },
+  {
+    "date": "2021-07-03",
+    "time": "20:00",
+    "home": "LSB",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-07-04",
+    "time": "17:00",
+    "home": "NS",
+    "away": "HLE"
+  },
+  {
+    "date": "2021-07-04",
+    "time": "20:00",
+    "home": "GEN",
+    "away": "DK"
+  },
+  {
+    "date": "2021-07-07",
+    "time": "17:00",
+    "home": "LSB",
+    "away": "DK"
+  },
+  {
+    "date": "2021-07-07",
+    "time": "20:00",
+    "home": "NS",
+    "away": "AF"
+  },
+  {
+    "date": "2021-07-08",
+    "time": "17:00",
+    "home": "KT",
+    "away": "HLE"
+  },
+  {
+    "date": "2021-07-08",
+    "time": "20:00",
+    "home": "BRO",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-07-09",
+    "time": "17:00",
+    "home": "T1",
+    "away": "GEN"
+  },
+  {
+    "date": "2021-07-09",
+    "time": "20:00",
+    "home": "LSB",
+    "away": "AF"
+  },
+  {
+    "date": "2021-07-10",
+    "time": "17:00",
+    "home": "KT",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-07-10",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "DK"
+  },
+  {
+    "date": "2021-07-11",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-07-11",
+    "time": "20:00",
+    "home": "T1",
+    "away": "NS"
+  },
+  {
+    "date": "2021-07-15",
+    "time": "17:00",
+    "home": "T1",
+    "away": "KT"
+  },
+  {
+    "date": "2021-07-15",
+    "time": "20:00",
+    "home": "NS",
+    "away": "DK"
+  },
+  {
+    "date": "2021-07-16",
+    "time": "17:00",
+    "home": "BRO",
+    "away": "AF"
+  },
+  {
+    "date": "2021-07-16",
+    "time": "20:00",
+    "home": "LSB",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-07-17",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "GEN"
+  },
+  {
+    "date": "2021-07-17",
+    "time": "20:00",
+    "home": "T1",
+    "away": "DK"
+  },
+  {
+    "date": "2021-07-18",
+    "time": "17:00",
+    "home": "BRO",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-07-18",
+    "time": "20:00",
+    "home": "NS",
+    "away": "KT"
+  },
+  {
+    "date": "2021-07-22",
+    "time": "17:00",
+    "home": "LSB",
+    "away": "GEN"
+  },
+  {
+    "date": "2021-07-22",
+    "time": "20:00",
+    "home": "T1",
+    "away": "AF"
+  },
+  {
+    "date": "2021-07-23",
+    "time": "17:00",
+    "home": "KT",
+    "away": "HLE"
+  },
+  {
+    "date": "2021-07-23",
+    "time": "20:00",
+    "home": "NS",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-07-24",
+    "time": "17:00",
+    "home": "DK",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-07-24",
+    "time": "20:00",
+    "home": "T1",
+    "away": "LSB"
+  },
+  {
+    "date": "2021-07-25",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "AF"
+  },
+  {
+    "date": "2021-07-25",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-07-29",
+    "time": "17:00",
+    "home": "DK",
+    "away": "AF"
+  },
+  {
+    "date": "2021-07-29",
+    "time": "20:00",
+    "home": "HLE",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-07-30",
+    "time": "17:00",
+    "home": "NS",
+    "away": "LSB"
+  },
+  {
+    "date": "2021-07-30",
+    "time": "20:00",
+    "home": "KT",
+    "away": "GEN"
+  },
+  {
+    "date": "2021-07-31",
+    "time": "17:00",
+    "home": "T1",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-07-31",
+    "time": "20:00",
+    "home": "DRX",
+    "away": "AF"
+  },
+  {
+    "date": "2021-08-01",
+    "time": "17:00",
+    "home": "NS",
+    "away": "HLE"
+  },
+  {
+    "date": "2021-08-01",
+    "time": "20:00",
+    "home": "KT",
+    "away": "DK"
+  },
+  {
+    "date": "2021-08-05",
+    "time": "17:00",
+    "home": "BRO",
+    "away": "DK"
+  },
+  {
+    "date": "2021-08-05",
+    "time": "20:00",
+    "home": "LSB",
+    "away": "HLE"
+  },
+  {
+    "date": "2021-08-06",
+    "time": "17:00",
+    "home": "KT",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-08-06",
+    "time": "20:00",
+    "home": "T1",
+    "away": "GEN"
+  },
+  {
+    "date": "2021-08-07",
+    "time": "17:00",
+    "home": "NS",
+    "away": "AF"
+  },
+  {
+    "date": "2021-08-07",
+    "time": "20:00",
+    "home": "LSB",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-08-08",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "DK"
+  },
+  {
+    "date": "2021-08-08",
+    "time": "20:00",
+    "home": "T1",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-08-12",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "AF"
+  },
+  {
+    "date": "2021-08-12",
+    "time": "20:00",
+    "home": "LSB",
+    "away": "KT"
+  },
+  {
+    "date": "2021-08-13",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "BRO"
+  },
+  {
+    "date": "2021-08-13",
+    "time": "20:00",
+    "home": "NS",
+    "away": "DRX"
+  },
+  {
+    "date": "2021-08-14",
+    "time": "17:00",
+    "home": "LSB",
+    "away": "DK"
+  },
+  {
+    "date": "2021-08-14",
+    "time": "20:00",
+    "home": "KT",
+    "away": "AF"
+  },
+  {
+    "date": "2021-08-15",
+    "time": "17:00",
+    "home": "T1",
+    "away": "HLE"
+  },
+  {
+    "date": "2021-08-15",
+    "time": "20:00",
+    "home": "NS",
+    "away": "GEN"
   }
 ]
