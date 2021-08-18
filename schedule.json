@@ -1522,5 +1522,35 @@
     "time": "20:00",
     "home": "NS",
     "away": "GEN"
+  },
+  {
+    "date": "2021-08-18",
+    "time": "17:00",
+    "home": "AF",
+    "away": "NS"
+  },
+  {
+    "date": "2021-08-19",
+    "time": "17:00",
+    "home": "LSB",
+    "away": "T1"
+  },
+  {
+    "date": "2021-08-21",
+    "time": "17:00",
+    "home": "DK",
+    "away": "TBD"
+  },
+  {
+    "date": "2021-08-22",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "TBD"
+  },
+  {
+    "date": "2021-08-28",
+    "time": "17:00",
+    "home": "TBD",
+    "away": "TBD"
   }
 ]
