@@ -1544,31 +1544,31 @@
   {
     "date": "2022-08-17",
     "time": "17:00",
-    "home": "DRX",
-    "away": "LSB"
+    "home": "LSB",
+    "away": "DRX"
   },
   {
     "date": "2022-08-18",
     "time": "17:00",
-    "home": "KT",
-    "away": "DK"
+    "home": "DK",
+    "away": "KT"
   },
   {
     "date": "2022-08-20",
     "time": "17:00",
-    "home": "GEN",
-    "away": "TBD"
+    "home": "LSB",
+    "away": "GEN"
   },
   {
     "date": "2022-08-21",
     "time": "17:00",
     "home": "T1",
-    "away": "TBD"
+    "away": "DK"
   },
   {
     "date": "2022-08-28",
     "time": "17:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "T1",
+    "away": "GEN"
   }
 ]
