@@ -7212,27 +7212,327 @@
     "away": "SGB"
   },
   {
+    "date": "2022-10-03",
+    "time": "11:00",
+    "home": "EG",
+    "away": "DFM"
+  },
+  {
+    "date": "2022-10-03",
+    "time": "12:00",
+    "home": "LLL",
+    "away": "EG"
+  },
+  {
     "date": "2022-10-04",
     "time": "03:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "MAD",
+    "away": "SGB"
   },
   {
     "date": "2022-10-04",
     "time": "08:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "LLL",
+    "away": "DFM"
   },
   {
     "date": "2022-10-05",
     "time": "03:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "MAD",
+    "away": "EG"
   },
   {
     "date": "2022-10-05",
     "time": "08:00",
-    "home": "TBD",
+    "home": "DFM",
+    "away": "RNG"
+  },
+  {
+    "date": "2022-10-08",
+    "time": "06:00",
+    "home": "C9",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-08",
+    "time": "07:00",
+    "home": "G2",
+    "away": "DK"
+  },
+  {
+    "date": "2022-10-08",
+    "time": "08:00",
+    "home": "CFO",
+    "away": "100"
+  },
+  {
+    "date": "2022-10-08",
+    "time": "09:00",
+    "home": "JDG",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-08",
+    "time": "10:00",
+    "home": "T1",
+    "away": "EDG"
+  },
+  {
+    "date": "2022-10-08",
+    "time": "11:00",
+    "home": "GEN",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-09",
+    "time": "06:00",
+    "home": "RGE",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-09",
+    "time": "07:00",
+    "home": "G2",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-09",
+    "time": "08:00",
+    "home": "T1",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-09",
+    "time": "09:00",
+    "home": "EDG",
+    "away": "C9"
+  },
+  {
+    "date": "2022-10-09",
+    "time": "10:00",
+    "home": "TES",
+    "away": "GAM"
+  },
+  {
+    "date": "2022-10-09",
+    "time": "11:00",
+    "home": "DK",
+    "away": "JDG"
+  },
+  {
+    "date": "2022-10-10",
+    "time": "06:00",
+    "home": "GAM",
+    "away": "RGE"
+  },
+  {
+    "date": "2022-10-10",
+    "time": "07:00",
+    "home": "100",
+    "away": "GEN"
+  },
+  {
+    "date": "2022-10-10",
+    "time": "08:00",
+    "home": "EDG",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-10",
+    "time": "09:00",
+    "home": "C9",
+    "away": "T1"
+  },
+  {
+    "date": "2022-10-10",
+    "time": "10:00",
+    "home": "CFO",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-10",
+    "time": "11:00",
+    "home": "TES",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-11",
+    "time": "06:00",
+    "home": "JDG",
+    "away": "G2"
+  },
+  {
+    "date": "2022-10-11",
+    "time": "07:00",
+    "home": "RGE",
+    "away": "TES"
+  },
+  {
+    "date": "2022-10-11",
+    "time": "08:00",
+    "home": "DK",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-11",
+    "time": "09:00",
+    "home": "100",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-11",
+    "time": "10:00",
+    "home": "GEN",
+    "away": "CFO"
+  },
+  {
+    "date": "2022-10-11",
+    "time": "11:00",
+    "home": "GAM",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-14",
+    "time": "04:00",
+    "home": "C9",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-14",
+    "time": "05:00",
+    "home": "T1",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-14",
+    "time": "06:00",
+    "home": "C9",
+    "away": "EDG"
+  },
+  {
+    "date": "2022-10-14",
+    "time": "07:00",
+    "home": "EDG",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-14",
+    "time": "08:00",
+    "home": "T1",
+    "away": "C9"
+  },
+  {
+    "date": "2022-10-14",
+    "time": "09:00",
+    "home": "EDG",
+    "away": "T1"
+  },
+  {
+    "date": "2022-10-15",
+    "time": "04:00",
+    "home": "G2",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-15",
+    "time": "05:00",
+    "home": "JDG",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-15",
+    "time": "06:00",
+    "home": "DK",
+    "away": "G2"
+  },
+  {
+    "date": "2022-10-15",
+    "time": "07:00",
+    "home": "G2",
+    "away": "JDG"
+  },
+  {
+    "date": "2022-10-15",
+    "time": "08:00",
+    "home": "DK",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-15",
+    "time": "09:00",
+    "home": "JDG",
+    "away": "DK"
+  },
+  {
+    "date": "2022-10-16",
+    "time": "04:00",
+    "home": "RGE",
+    "away": "GAM"
+  },
+  {
+    "date": "2022-10-16",
+    "time": "05:00",
+    "home": "GAM",
+    "away": "TES"
+  },
+  {
+    "date": "2022-10-16",
+    "time": "06:00",
+    "home": "RGE",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-16",
+    "time": "07:00",
+    "home": "GAM",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-16",
+    "time": "08:00",
+    "home": "TES",
+    "away": "RGE"
+  },
+  {
+    "date": "2022-10-16",
+    "time": "09:00",
+    "home": "TES",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-17",
+    "time": "04:00",
+    "home": "100",
+    "away": "CFO"
+  },
+  {
+    "date": "2022-10-17",
+    "time": "05:00",
+    "home": "CFO",
+    "away": "GEN"
+  },
+  {
+    "date": "2022-10-17",
+    "time": "06:00",
+    "home": "100",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-17",
+    "time": "07:00",
+    "home": "GEN",
+    "away": "100"
+  },
+  {
+    "date": "2022-10-17",
+    "time": "08:00",
+    "home": "CFO",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-17",
+    "time": "09:00",
+    "home": "GEN",
     "away": "TBD"
   }
 ]
