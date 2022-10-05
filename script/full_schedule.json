@@ -7251,7 +7251,7 @@
     "date": "2022-10-08",
     "time": "06:00",
     "home": "C9",
-    "away": "TBD"
+    "away": "FNC"
   },
   {
     "date": "2022-10-08",
@@ -7269,7 +7269,7 @@
     "date": "2022-10-08",
     "time": "09:00",
     "home": "JDG",
-    "away": "TBD"
+    "away": "EG"
   },
   {
     "date": "2022-10-08",
@@ -7281,25 +7281,25 @@
     "date": "2022-10-08",
     "time": "11:00",
     "home": "GEN",
-    "away": "TBD"
+    "away": "RNG"
   },
   {
     "date": "2022-10-09",
     "time": "06:00",
     "home": "RGE",
-    "away": "TBD"
+    "away": "DRX"
   },
   {
     "date": "2022-10-09",
     "time": "07:00",
-    "home": "G2",
-    "away": "TBD"
+    "home": "EG",
+    "away": "G2"
   },
   {
     "date": "2022-10-09",
     "time": "08:00",
-    "home": "T1",
-    "away": "TBD"
+    "home": "FNC",
+    "away": "T1"
   },
   {
     "date": "2022-10-09",
@@ -7335,7 +7335,7 @@
     "date": "2022-10-10",
     "time": "08:00",
     "home": "EDG",
-    "away": "TBD"
+    "away": "FNC"
   },
   {
     "date": "2022-10-10",
@@ -7346,14 +7346,14 @@
   {
     "date": "2022-10-10",
     "time": "10:00",
-    "home": "CFO",
-    "away": "TBD"
+    "home": "RNG",
+    "away": "CFO"
   },
   {
     "date": "2022-10-10",
     "time": "11:00",
-    "home": "TES",
-    "away": "TBD"
+    "home": "DRX",
+    "away": "TES"
   },
   {
     "date": "2022-10-11",
@@ -7371,13 +7371,13 @@
     "date": "2022-10-11",
     "time": "08:00",
     "home": "DK",
-    "away": "TBD"
+    "away": "EG"
   },
   {
     "date": "2022-10-11",
     "time": "09:00",
     "home": "100",
-    "away": "TBD"
+    "away": "RNG"
   },
   {
     "date": "2022-10-11",
@@ -7389,19 +7389,19 @@
     "date": "2022-10-11",
     "time": "11:00",
     "home": "GAM",
-    "away": "TBD"
+    "away": "DRX"
   },
   {
     "date": "2022-10-14",
     "time": "04:00",
-    "home": "C9",
-    "away": "TBD"
+    "home": "FNC",
+    "away": "C9"
   },
   {
     "date": "2022-10-14",
     "time": "05:00",
     "home": "T1",
-    "away": "TBD"
+    "away": "FNC"
   },
   {
     "date": "2022-10-14",
@@ -7412,8 +7412,8 @@
   {
     "date": "2022-10-14",
     "time": "07:00",
-    "home": "EDG",
-    "away": "TBD"
+    "home": "FNC",
+    "away": "EDG"
   },
   {
     "date": "2022-10-14",
@@ -7431,13 +7431,13 @@
     "date": "2022-10-15",
     "time": "04:00",
     "home": "G2",
-    "away": "TBD"
+    "away": "EG"
   },
   {
     "date": "2022-10-15",
     "time": "05:00",
-    "home": "JDG",
-    "away": "TBD"
+    "home": "EG",
+    "away": "JDG"
   },
   {
     "date": "2022-10-15",
@@ -7454,8 +7454,8 @@
   {
     "date": "2022-10-15",
     "time": "08:00",
-    "home": "DK",
-    "away": "TBD"
+    "home": "EG",
+    "away": "DK"
   },
   {
     "date": "2022-10-15",
@@ -7478,14 +7478,14 @@
   {
     "date": "2022-10-16",
     "time": "06:00",
-    "home": "RGE",
-    "away": "TBD"
+    "home": "DRX",
+    "away": "RGE"
   },
   {
     "date": "2022-10-16",
     "time": "07:00",
-    "home": "GAM",
-    "away": "TBD"
+    "home": "DRX",
+    "away": "GAM"
   },
   {
     "date": "2022-10-16",
@@ -7497,7 +7497,7 @@
     "date": "2022-10-16",
     "time": "09:00",
     "home": "TES",
-    "away": "TBD"
+    "away": "DRX"
   },
   {
     "date": "2022-10-17",
@@ -7514,8 +7514,8 @@
   {
     "date": "2022-10-17",
     "time": "06:00",
-    "home": "100",
-    "away": "TBD"
+    "home": "RNG",
+    "away": "100"
   },
   {
     "date": "2022-10-17",
@@ -7527,12 +7527,12 @@
     "date": "2022-10-17",
     "time": "08:00",
     "home": "CFO",
-    "away": "TBD"
+    "away": "RNG"
   },
   {
     "date": "2022-10-17",
     "time": "09:00",
-    "home": "GEN",
-    "away": "TBD"
+    "home": "RNG",
+    "away": "GEN"
   }
 ]
