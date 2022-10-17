@@ -7534,5 +7534,47 @@
     "time": "09:00",
     "home": "RNG",
     "away": "GEN"
+  },
+  {
+    "date": "2022-10-21",
+    "time": "06:00",
+    "home": "RGE",
+    "away": "JDG"
+  },
+  {
+    "date": "2022-10-22",
+    "time": "06:00",
+    "home": "RNG",
+    "away": "T1"
+  },
+  {
+    "date": "2022-10-23",
+    "time": "06:00",
+    "home": "DK",
+    "away": "GEN"
+  },
+  {
+    "date": "2022-10-24",
+    "time": "06:00",
+    "home": "EDG",
+    "away": "DRX"
+  },
+  {
+    "date": "2022-10-30",
+    "time": "06:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-10-31",
+    "time": "06:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2022-11-06",
+    "time": "09:00",
+    "home": "TBD",
+    "away": "TBD"
   }
 ]
