@@ -27,4 +27,4 @@ X-WR-TIMEZONE:Asia/Seoul
 ${events}
 END:VCALENDAR`;
 
-fs.writeFileSync('schedule.ics', ical);
+console.log(ical);
