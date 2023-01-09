@@ -17,26 +17,46 @@ const options = {
   method: 'GET'
 };
 
-https.request(options, (res) => {
-  let str = '';
-  res.on('data', (chunk) => {
-    str += chunk;
+(async () => {
+  let events = [];
+  let resp = await getSchedule();
+  events = events.concat(resp.data.schedule.events);
+
+  while (!Object.is(resp.data.schedule.pages.newer, null)) {
+    resp = await getSchedule(resp.data.schedule.pages.newer);
+    events = events.concat(resp.data.schedule.events);
+  }
+
+  const schedule = events.filter((event) => event.state === 'unstarted').map((event) => {
+    const startTime = new Date(event.startTime);
+    const date = `${startTime.getFullYear()}-${(startTime.getMonth() + 1).toString().padStart(2, '0')}-${startTime.getDate().toString().padStart(2, '0')}`;
+    const time = `${startTime.getHours().toString().padStart(2, '0')}:${startTime.getMinutes().toString().padStart(2, '0')}`;
+    const home = event.match.teams[0].code;
+    const away = event.match.teams[1].code;
+
+    return { date, time, home, away };
   });
 
-  res.on('end', () => {
-    const body = JSON.parse(str);
-    const events = body.data.schedule.events;
+  console.log(JSON.stringify(schedule));
+})();
 
-    const schedule = events.filter((event) => event.state === 'unstarted').map((event) => {
-      const startTime = new Date(event.startTime);
-      const date = `${startTime.getFullYear()}-${(startTime.getMonth() + 1).toString().padStart(2, '0')}-${startTime.getDate().toString().padStart(2, '0')}`;
-      const time = `${startTime.getHours().toString().padStart(2, '0')}:${startTime.getMinutes().toString().padStart(2, '0')}`;
-      const home = event.match.teams[0].code;
-      const away = event.match.teams[1].code; 
+function getSchedule(pageToken = null) {
+  return new Promise((resolve, reject) => {
+    const req = https.request({ ...options, path: Object.is(pageToken, null) ? options.path : options.path + `&pageToken=${pageToken}` }, (res) => {
+      let str = '';
+      res.on('data', (chunk) => {
+        str += chunk;
+      });
 
-      return { date, time, home, away };
+      res.on('end', () => {
+        resolve(JSON.parse(str));
+      });
     });
 
-    console.log(JSON.stringify(schedule));
+    req.on('error', (err) => {
+      reject(err);
+    });
+
+    req.end();
   });
-}).end();
+}
