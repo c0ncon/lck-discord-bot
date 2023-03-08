@@ -1,3 +1,3 @@
-nohup ./lck-discord-bot &
+nohup ./lck-discord-bot &> output.logs &
 echo $! > pid
 
