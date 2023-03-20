@@ -542,42 +542,48 @@
   {
     "date": "2023-03-22",
     "time": "17:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "LSB",
+    "away": "KT"
   },
   {
     "date": "2023-03-23",
     "time": "17:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "HLE",
+    "away": "DK"
   },
   {
     "date": "2023-03-25",
+    "time": "15:00",
+    "home": "T1",
+    "away": "TBD"
+  },
+  {
+    "date": "2023-03-26",
+    "time": "15:00",
+    "home": "GEN",
+    "away": "TBD"
+  },
+  {
+    "date": "2023-04-01",
     "time": "15:00",
     "home": "TBD",
     "away": "TBD"
   },
   {
-    "date": "2023-03-26",
-    "time": "14:00",
-    "home": "TBD",
-    "away": "TBD"
-  },
-  {
-    "date": "2023-04-01",
-    "time": "14:00",
-    "home": "TBD",
-    "away": "TBD"
-  },
-  {
     "date": "2023-04-02",
-    "time": "14:00",
+    "time": "15:00",
     "home": "TBD",
     "away": "TBD"
   },
   {
     "date": "2023-04-08",
-    "time": "14:00",
+    "time": "15:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2023-04-09",
+    "time": "15:00",
     "home": "TBD",
     "away": "TBD"
   }
