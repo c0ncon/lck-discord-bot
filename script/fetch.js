@@ -27,7 +27,7 @@ const options = {
     events = events.concat(resp.data.schedule.events);
   }
 
-  const schedule = events.filter((event) => true).map((event) => {
+  const schedule = events.filter((event) => event.state === 'unstarted').map((event) => {
     const startTime = new Date(event.startTime);
     // const date = `${startTime.getFullYear()}-${(startTime.getMonth() + 1).toString().padStart(2, '0')}-${startTime.getDate().toString().padStart(2, '0')}`;
     // const time = `${startTime.getHours().toString().padStart(2, '0')}:${startTime.getMinutes().toString().padStart(2, '0')}`;
