@@ -1,4 +1,5 @@
 const https = require('https');
+const fs = require('fs');
 
 const API_KEY = '0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z'
 const LEAGUE_ID = {
@@ -6,6 +7,10 @@ const LEAGUE_ID = {
   'LCK': '98767991310872058',
   'MSI': '98767991325878492',
 }
+
+const FULL_SCHEDULE_JSON = './full_schedule.json';
+const CURRENT_SCHEDULE_JSON = '../schedule.json';
+const OVERWRITE = true;
 
 const leagueId = Object.values(LEAGUE_ID).join(',');
 const options = {
@@ -39,7 +44,8 @@ const options = {
     return { date, time, home, away };
   });
 
-  console.log(JSON.stringify(schedule));
+  mergeSchedule(schedule, CURRENT_SCHEDULE_JSON, OVERWRITE);
+  mergeSchedule(schedule, FULL_SCHEDULE_JSON, OVERWRITE);
 })();
 
 function getSchedule(pageToken = null) {
@@ -61,4 +67,32 @@ function getSchedule(pageToken = null) {
 
     req.end();
   });
+}
+
+function mergeSchedule(newSchedule, srcJson, overwrite = false) {
+  const scheduleJson = fs.readFileSync(srcJson, 'utf8');
+  const origSchedule = JSON.parse(scheduleJson);
+
+  console.log('Merging ', srcJson);
+  newSchedule.forEach((event) => {
+    let idx = origSchedule.findIndex((event2) => {
+      return (event.date == event2.date && event.time == event2.time);
+    });
+
+    if (idx === -1) {
+      console.log('added', JSON.stringify(event));
+      origSchedule.push(event);
+    } else {
+      const event2 = origSchedule[idx];
+      if (event.home != event2.home || event.away != event2.away) {
+        console.log('updated', `${JSON.stringify(origSchedule[idx])} -> ${JSON.stringify(event)}`);
+        origSchedule[idx] = event;
+      }
+    }
+  });
+  console.log('\n');
+
+  if (overwrite) {
+    fs.writeFileSync(srcJson, JSON.stringify(origSchedule, null, 2));
+  }
 }
