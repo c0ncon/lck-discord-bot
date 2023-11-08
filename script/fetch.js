@@ -10,7 +10,6 @@ const LEAGUE_ID = {
 
 const FULL_SCHEDULE_JSON = './full_schedule.json';
 const CURRENT_SCHEDULE_JSON = '../schedule.json';
-const OVERWRITE = true;
 
 const leagueId = Object.values(LEAGUE_ID).join(',');
 const options = {
@@ -44,8 +43,16 @@ const options = {
     return { date, time, home, away };
   });
 
-  mergeSchedule(schedule, CURRENT_SCHEDULE_JSON, OVERWRITE);
-  mergeSchedule(schedule, FULL_SCHEDULE_JSON, OVERWRITE);
+  let overwrite = false;
+  overwrite = (process.argv.length > 2 && process.argv[2] === 'w') ? true : false;
+
+  if (overwrite) {
+    console.log('Overwrite mode\n');
+  } else {
+    console.log('Dry run mode\n');
+  }
+  mergeSchedule(schedule, CURRENT_SCHEDULE_JSON, overwrite);
+  mergeSchedule(schedule, FULL_SCHEDULE_JSON, overwrite);
 })();
 
 function getSchedule(pageToken = null) {
