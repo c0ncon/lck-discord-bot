@@ -1,0 +1,1 @@
+docker build -t lck-discord-bot:$(git rev-parse --short HEAD) -t lck-discord-bot:latest .

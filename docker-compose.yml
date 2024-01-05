@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  lck-discord-bot:
+    image: lck-discord-bot:latest
+    container_name: bot
+    networks:
+      - proxy
+    labels:
+      - 'com.centurylinklabs.watchtower.enable=false'
+
+networks:
+  proxy:
+    name: proxy
+    external: true
