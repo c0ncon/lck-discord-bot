@@ -1654,5 +1654,581 @@
     "time": "17:00",
     "home": "T1",
     "away": "WBG"
+  },
+  {
+    "date": "2024-01-17",
+    "time": "17:00",
+    "home": "NS",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-01-17",
+    "time": "19:30",
+    "home": "T1",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-01-18",
+    "time": "17:00",
+    "home": "BRO",
+    "away": "DK"
+  },
+  {
+    "date": "2024-01-18",
+    "time": "19:30",
+    "home": "FOX",
+    "away": "KT"
+  },
+  {
+    "date": "2024-01-19",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-01-19",
+    "time": "19:30",
+    "home": "T1",
+    "away": "KDF"
+  },
+  {
+    "date": "2024-01-20",
+    "time": "15:00",
+    "home": "FOX",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-01-20",
+    "time": "17:30",
+    "home": "NS",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-01-21",
+    "time": "15:00",
+    "home": "KDF",
+    "away": "HLE"
+  },
+  {
+    "date": "2024-01-21",
+    "time": "17:30",
+    "home": "KT",
+    "away": "DK"
+  },
+  {
+    "date": "2024-01-24",
+    "time": "17:00",
+    "home": "FOX",
+    "away": "HLE"
+  },
+  {
+    "date": "2024-01-24",
+    "time": "19:30",
+    "home": "KDF",
+    "away": "KT"
+  },
+  {
+    "date": "2024-01-25",
+    "time": "17:00",
+    "home": "NS",
+    "away": "DK"
+  },
+  {
+    "date": "2024-01-25",
+    "time": "19:30",
+    "home": "GEN",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-01-26",
+    "time": "17:00",
+    "home": "T1",
+    "away": "KT"
+  },
+  {
+    "date": "2024-01-26",
+    "time": "19:30",
+    "home": "FOX",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-01-27",
+    "time": "15:00",
+    "home": "GEN",
+    "away": "DK"
+  },
+  {
+    "date": "2024-01-27",
+    "time": "17:30",
+    "home": "NS",
+    "away": "KDF"
+  },
+  {
+    "date": "2024-01-28",
+    "time": "15:00",
+    "home": "BRO",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-01-28",
+    "time": "17:30",
+    "home": "T1",
+    "away": "HLE"
+  },
+  {
+    "date": "2024-01-31",
+    "time": "17:00",
+    "home": "KDF",
+    "away": "DK"
+  },
+  {
+    "date": "2024-01-31",
+    "time": "19:30",
+    "home": "KT",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-02-01",
+    "time": "17:00",
+    "home": "T1",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-02-01",
+    "time": "19:30",
+    "home": "NS",
+    "away": "FOX"
+  },
+  {
+    "date": "2024-02-02",
+    "time": "17:00",
+    "home": "KDF",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-02-02",
+    "time": "19:30",
+    "home": "HLE",
+    "away": "DK"
+  },
+  {
+    "date": "2024-02-03",
+    "time": "15:00",
+    "home": "KT",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-02-03",
+    "time": "17:30",
+    "home": "T1",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-02-04",
+    "time": "15:00",
+    "home": "NS",
+    "away": "HLE"
+  },
+  {
+    "date": "2024-02-04",
+    "time": "17:30",
+    "home": "FOX",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-02-14",
+    "time": "17:00",
+    "home": "KT",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-02-14",
+    "time": "19:30",
+    "home": "KDF",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-02-15",
+    "time": "17:00",
+    "home": "T1",
+    "away": "DK"
+  },
+  {
+    "date": "2024-02-15",
+    "time": "19:30",
+    "home": "HLE",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-02-16",
+    "time": "17:00",
+    "home": "NS",
+    "away": "KT"
+  },
+  {
+    "date": "2024-02-16",
+    "time": "19:30",
+    "home": "FOX",
+    "away": "KDF"
+  },
+  {
+    "date": "2024-02-17",
+    "time": "15:00",
+    "home": "HLE",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-02-17",
+    "time": "17:30",
+    "home": "DK",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-02-18",
+    "time": "15:00",
+    "home": "T1",
+    "away": "FOX"
+  },
+  {
+    "date": "2024-02-18",
+    "time": "17:30",
+    "home": "NS",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-02-21",
+    "time": "17:00",
+    "home": "T1",
+    "away": "NS"
+  },
+  {
+    "date": "2024-02-21",
+    "time": "19:30",
+    "home": "KT",
+    "away": "HLE"
+  },
+  {
+    "date": "2024-02-22",
+    "time": "17:00",
+    "home": "FOX",
+    "away": "DK"
+  },
+  {
+    "date": "2024-02-22",
+    "time": "19:30",
+    "home": "GEN",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-02-23",
+    "time": "17:00",
+    "home": "KDF",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-02-23",
+    "time": "19:30",
+    "home": "NS",
+    "away": "HLE"
+  },
+  {
+    "date": "2024-02-24",
+    "time": "15:00",
+    "home": "T1",
+    "away": "KT"
+  },
+  {
+    "date": "2024-02-24",
+    "time": "17:30",
+    "home": "FOX",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-02-25",
+    "time": "15:00",
+    "home": "DK",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-02-25",
+    "time": "17:30",
+    "home": "KDF",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-02-28",
+    "time": "17:00",
+    "home": "KDF",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-02-28",
+    "time": "19:30",
+    "home": "T1",
+    "away": "FOX"
+  },
+  {
+    "date": "2024-02-29",
+    "time": "17:00",
+    "home": "BRO",
+    "away": "DK"
+  },
+  {
+    "date": "2024-02-29",
+    "time": "19:30",
+    "home": "NS",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-03-01",
+    "time": "17:00",
+    "home": "FOX",
+    "away": "HLE"
+  },
+  {
+    "date": "2024-03-01",
+    "time": "19:30",
+    "home": "KT",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-03-02",
+    "time": "15:00",
+    "home": "NS",
+    "away": "KDF"
+  },
+  {
+    "date": "2024-03-02",
+    "time": "17:30",
+    "home": "T1",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-03-03",
+    "time": "15:00",
+    "home": "KT",
+    "away": "DK"
+  },
+  {
+    "date": "2024-03-03",
+    "time": "17:30",
+    "home": "HLE",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-03-06",
+    "time": "17:00",
+    "home": "BRO",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-03-06",
+    "time": "19:30",
+    "home": "HLE",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-03-07",
+    "time": "17:00",
+    "home": "T1",
+    "away": "KDF"
+  },
+  {
+    "date": "2024-03-07",
+    "time": "19:30",
+    "home": "FOX",
+    "away": "KT"
+  },
+  {
+    "date": "2024-03-08",
+    "time": "17:00",
+    "home": "HLE",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-03-08",
+    "time": "19:30",
+    "home": "NS",
+    "away": "DK"
+  },
+  {
+    "date": "2024-03-09",
+    "time": "15:00",
+    "home": "T1",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-03-09",
+    "time": "17:30",
+    "home": "KDF",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-03-10",
+    "time": "15:00",
+    "home": "NS",
+    "away": "KT"
+  },
+  {
+    "date": "2024-03-10",
+    "time": "17:30",
+    "home": "FOX",
+    "away": "DK"
+  },
+  {
+    "date": "2024-03-13",
+    "time": "17:00",
+    "home": "KDF",
+    "away": "HLE"
+  },
+  {
+    "date": "2024-03-13",
+    "time": "19:30",
+    "home": "T1",
+    "away": "DK"
+  },
+  {
+    "date": "2024-03-14",
+    "time": "17:00",
+    "home": "FOX",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-03-14",
+    "time": "19:30",
+    "home": "KT",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-03-15",
+    "time": "17:00",
+    "home": "NS",
+    "away": "GEN"
+  },
+  {
+    "date": "2024-03-15",
+    "time": "19:30",
+    "home": "T1",
+    "away": "HLE"
+  },
+  {
+    "date": "2024-03-16",
+    "time": "15:00",
+    "home": "FOX",
+    "away": "KDF"
+  },
+  {
+    "date": "2024-03-16",
+    "time": "17:30",
+    "home": "KT",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-03-17",
+    "time": "15:00",
+    "home": "NS",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-03-17",
+    "time": "17:30",
+    "home": "GEN",
+    "away": "DK"
+  },
+  {
+    "date": "2024-03-20",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-03-20",
+    "time": "19:30",
+    "home": "T1",
+    "away": "NS"
+  },
+  {
+    "date": "2024-03-21",
+    "time": "17:00",
+    "home": "KT",
+    "away": "HLE"
+  },
+  {
+    "date": "2024-03-21",
+    "time": "19:30",
+    "home": "KDF",
+    "away": "DK"
+  },
+  {
+    "date": "2024-03-22",
+    "time": "17:00",
+    "home": "GEN",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-03-22",
+    "time": "19:30",
+    "home": "NS",
+    "away": "FOX"
+  },
+  {
+    "date": "2024-03-23",
+    "time": "15:00",
+    "home": "HLE",
+    "away": "DK"
+  },
+  {
+    "date": "2024-03-23",
+    "time": "17:30",
+    "home": "T1",
+    "away": "DRX"
+  },
+  {
+    "date": "2024-03-24",
+    "time": "15:00",
+    "home": "FOX",
+    "away": "BRO"
+  },
+  {
+    "date": "2024-03-24",
+    "time": "17:30",
+    "home": "KDF",
+    "away": "KT"
+  },
+  {
+    "date": "2024-03-30",
+    "time": "14:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2024-03-31",
+    "time": "15:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2024-04-03",
+    "time": "17:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2024-04-04",
+    "time": "17:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2024-04-06",
+    "time": "15:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2024-04-07",
+    "time": "15:00",
+    "home": "TBD",
+    "away": "TBD"
   }
 ]
