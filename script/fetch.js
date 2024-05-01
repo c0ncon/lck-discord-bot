@@ -44,7 +44,7 @@ const options = {
   });
 
   let overwrite = false;
-  overwrite = (process.argv.length > 2 && process.argv[2] === 'w') ? true : false;
+  overwrite = (process.argv.length > 2 && process.argv[2] === 'w');
 
   if (overwrite) {
     console.log('Overwrite mode\n');
