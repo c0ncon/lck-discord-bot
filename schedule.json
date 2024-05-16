@@ -2348,43 +2348,43 @@
   {
     "date": "2024-05-12",
     "time": "18:00",
-    "home": "T1",
-    "away": "BLG"
+    "home": "BLG",
+    "away": "T1"
   },
   {
     "date": "2024-05-14",
     "time": "18:00",
-    "home": "G2",
-    "away": "TES"
+    "home": "TES",
+    "away": "G2"
   },
   {
     "date": "2024-05-15",
     "time": "18:00",
-    "home": "TL",
-    "away": "T1"
+    "home": "T1",
+    "away": "TL"
   },
   {
     "date": "2024-05-16",
     "time": "18:00",
-    "home": "BLG",
-    "away": "GEN"
+    "home": "GEN",
+    "away": "BLG"
   },
   {
     "date": "2024-05-17",
     "time": "18:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "T1",
+    "away": "G2"
   },
   {
     "date": "2024-05-18",
     "time": "18:00",
     "home": "TBD",
-    "away": "TBD"
+    "away": "BLG"
   },
   {
     "date": "2024-05-19",
     "time": "18:00",
     "home": "TBD",
-    "away": "TBD"
+    "away": "GEN"
   }
 ]
