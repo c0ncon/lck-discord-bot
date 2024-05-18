@@ -5,6 +5,7 @@ COPY . .
 RUN go build -a .
 
 FROM scratch
+ENV TZ=Asia/Seoul
 WORKDIR /app
 COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=build /src/config ./config
