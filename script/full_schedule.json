@@ -9956,13 +9956,13 @@
   {
     "date": "2024-05-18",
     "time": "18:00",
-    "home": "T1",
-    "away": "BLG"
+    "home": "BLG",
+    "away": "T1"
   },
   {
     "date": "2024-05-19",
     "time": "18:00",
-    "home": "TBD",
+    "home": "BLG",
     "away": "GEN"
   }
 ]
