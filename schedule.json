@@ -2942,37 +2942,37 @@
   {
     "date": "2024-08-28",
     "time": "17:00",
-    "home": "TBD",
-    "away": "GEN"
+    "home": "GEN",
+    "away": "DK"
   },
   {
     "date": "2024-08-29",
     "time": "17:00",
-    "home": "TBD",
-    "away": "HLE"
+    "home": "HLE",
+    "away": "T1"
   },
   {
     "date": "2024-08-31",
     "time": "15:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "GEN",
+    "away": "HLE"
   },
   {
     "date": "2024-09-01",
     "time": "15:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "T1",
+    "away": "DK"
   },
   {
     "date": "2024-09-07",
     "time": "15:00",
     "home": "TBD",
-    "away": "TBD"
+    "away": "HLE"
   },
   {
     "date": "2024-09-08",
     "time": "15:00",
     "home": "TBD",
-    "away": "TBD"
+    "away": "GEN"
   }
 ]
