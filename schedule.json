@@ -2960,19 +2960,19 @@
   {
     "date": "2024-09-01",
     "time": "15:00",
-    "home": "T1",
-    "away": "DK"
+    "home": "DK",
+    "away": "T1"
   },
   {
     "date": "2024-09-07",
     "time": "15:00",
-    "home": "TBD",
-    "away": "HLE"
+    "home": "HLE",
+    "away": "T1"
   },
   {
     "date": "2024-09-08",
     "time": "15:00",
-    "home": "TBD",
-    "away": "GEN"
+    "home": "GEN",
+    "away": "HLE"
   }
 ]
