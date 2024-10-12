@@ -3236,20 +3236,20 @@
   {
     "date": "2024-10-13",
     "time": "21:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "DK",
+    "away": "WBG"
   },
   {
     "date": "2024-10-13",
     "time": "24:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "G2",
+    "away": "BLG"
   },
   {
     "date": "2024-10-13",
     "time": "27:00",
-    "home": "TBD",
-    "away": "TBD"
+    "home": "FLY",
+    "away": "TL"
   },
   {
     "date": "2024-10-17",
@@ -3290,6 +3290,12 @@
   {
     "date": "2024-11-02",
     "time": "24:00",
+    "home": "TBD",
+    "away": "TBD"
+  },
+  {
+    "date": "2024-11-02",
+    "time": "23:00",
     "home": "TBD",
     "away": "TBD"
   }
