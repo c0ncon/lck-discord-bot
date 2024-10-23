@@ -31,28 +31,30 @@ const options = {
     events = events.concat(resp.data.schedule.events);
   }
 
-  const schedule = events.filter((event) => event.state === 'unstarted').map((event) => {
+  const schedule = events.reduce((acc, event) => {
+    if (typeof event.match === 'undefined') return acc;
+
     const startTime = new Date(event.startTime);
-    const date = `${startTime.getFullYear()}-${(startTime.getMonth() + 1).toString().padStart(2, '0')}-${startTime.getDate().toString().padStart(2, '0')}`;
-    const time = `${startTime.getHours().toString().padStart(2, '0')}:${startTime.getMinutes().toString().padStart(2, '0')}`;
-    // const date = `${startTime.getUTCFullYear()}-${(startTime.getUTCMonth() + 1).toString().padStart(2, '0')}-${startTime.getUTCDate().toString().padStart(2, '0')}`;
-    // const time = `${(startTime.getUTCHours() + 9).toString().padStart(2, '0')}:${startTime.getUTCMinutes().toString().padStart(2, '0')}`;
+    // const date = `${startTime.getFullYear()}-${(startTime.getMonth() + 1).toString().padStart(2, '0')}-${startTime.getDate().toString().padStart(2, '0')}`;
+    // const time = `${startTime.getHours().toString().padStart(2, '0')}:${startTime.getMinutes().toString().padStart(2, '0')}`;
+    const date = `${startTime.getUTCFullYear()}-${(startTime.getUTCMonth() + 1).toString().padStart(2, '0')}-${startTime.getUTCDate().toString().padStart(2, '0')}`;
+    const time = `${(startTime.getUTCHours() + 9).toString().padStart(2, '0')}:${startTime.getUTCMinutes().toString().padStart(2, '0')}`;
     const home = event.match.teams[0].code;
     const away = event.match.teams[1].code;
 
-    return { date, time, home, away };
-  });
+    return acc.concat({ date, time, home, away });
+  }, []);
 
   let overwrite = false;
   overwrite = (process.argv.length > 2 && process.argv[2] === 'w');
 
   if (overwrite) {
     console.log('Overwrite mode\n');
-  } else {
-    console.log('Dry run mode\n');
   }
   mergeSchedule(schedule, CURRENT_SCHEDULE_JSON, overwrite);
   mergeSchedule(schedule, FULL_SCHEDULE_JSON, overwrite);
+
+  if (!overwrite) console.log('\nAdd "w" to overwrite.');
 })();
 
 function getSchedule(pageToken = null) {
@@ -80,24 +82,31 @@ function mergeSchedule(newSchedule, srcJson, overwrite = false) {
   const scheduleJson = fs.readFileSync(srcJson, 'utf8');
   const origSchedule = JSON.parse(scheduleJson);
 
-  console.log('Merging ', srcJson);
-  newSchedule.forEach((event) => {
+  console.log(`\nMerging ${srcJson}`);
+  newSchedule.forEach((event, i) => {
     let idx = origSchedule.findIndex((event2) => {
       return (event.date == event2.date && event.time == event2.time);
     });
 
     if (idx === -1) {
-      console.log('added', JSON.stringify(event));
+      if (overwrite) {
+        console.log('added', JSON.stringify(event));
+      } else {
+        console.log('add', JSON.stringify(event));
+      }
       origSchedule.push(event);
     } else {
       const event2 = origSchedule[idx];
       if (event.home != event2.home || event.away != event2.away) {
-        console.log('updated', `${JSON.stringify(origSchedule[idx])} -> ${JSON.stringify(event)}`);
+        if (overwrite) {
+          console.log('updated', `${JSON.stringify(origSchedule[idx])} -> ${JSON.stringify(event)}`);
+        } else {
+          console.log('update', `${JSON.stringify(origSchedule[idx])} -> ${JSON.stringify(event)}`);
+        }
         origSchedule[idx] = event;
       }
     }
   });
-  console.log('\n');
 
   if (overwrite) {
     fs.writeFileSync(srcJson, JSON.stringify(origSchedule, null, 2));
